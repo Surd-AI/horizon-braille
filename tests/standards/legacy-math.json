@@ -1,0 +1,174 @@
+{
+  "provenance": "legacy",
+  "reviewed": false,
+  "source": {
+    "path": "公式盲文转换/braille_case_test.js",
+    "sha256": "195295d255c7d2d9e1709adf8b6fdb6b6854659cb364bfda41e3a259fbc72944",
+    "revision": "9592d71"
+  },
+  "note": "Compatibility expectations, not official standard goldens.",
+  "cases": [
+    {
+      "id": "legacy-math-01",
+      "input": "0.\\dot{1}4285\\dot{7}",
+      "expected": "⠼⠚⠂⠐⠁⠙⠃⠓⠑⠛",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-02",
+      "input": "\\sqrt[-3]{\\frac{1}{4}}=\\sqrt[3]{4}",
+      "expected": "⠩⠤⠒⠱⠼⠁⠲⠹⠀⠶⠩⠒⠱⠼⠙⠹",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-03",
+      "input": "{\\sqrt{2\\sqrt{2\\sqrt2}}}={\\sqrt{\\sqrt{\\sqrt{128}}}}={\\sqrt[8]{128}}",
+      "expected": "⠩⠱⠼⠃⠩⠱⠼⠃⠩⠱⠼⠃⠹⠹⠹⠀⠶⠩⠱⠩⠱⠩⠱⠼⠁⠃⠓⠹⠹⠹\n⠶⠩⠦⠱⠼⠁⠃⠓⠹",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-04",
+      "input": "x^{-5}=\\dfrac{1}{x^5}",
+      "expected": "⠰⠭⠌⠤⠢⠀⠶⠼⠁⠳⠰⠭⠌⠢",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-05",
+      "input": "b^{\\frac{-a}{3-x}}",
+      "expected": "⠰⠃⠌⠠⠆⠤⠰⠁⠀⠳⠼⠉⠀⠤⠰⠭⠰⠱",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-06",
+      "input": "\\mathrm{p}+\\left|p\\right|\\geqslant0",
+      "expected": "⠰⠏⠀⠖⠸⠰⠏⠸⠀⠕⠶⠼⠚",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-07",
+      "input": "1+\\{2+[3+(4+5)\\cdot6]\\cdot7\\}\\cdot8",
+      "expected": "⠼⠁⠀⠖⠪⠼⠃⠀⠖⠷⠼⠉⠀⠖⠣⠼⠙⠀⠖⠼⠑⠜⠄⠼⠋⠾⠄⠠\n⠼⠛⠕⠄⠼⠓",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-08",
+      "input": "0^1\\sum_g^+",
+      "expected": "⠼⠚⠌⠂⠸⠎⠨⠡⠰⠛⠱⠨⠌⠖⠱",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-09",
+      "input": "\\log_{100}1000=\\dfrac32",
+      "expected": "⠫⠇⠡⠂⠴⠴⠼⠁⠚⠚⠚⠀⠶⠼⠉⠆",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-10",
+      "input": "\\lg(x^m y^n)=m\\lg x+n\\lg y",
+      "expected": "⠫⠇⠛⠣⠰⠭⠌⠰⠍⠱⠰⠽⠌⠰⠝⠱⠜⠀⠶⠰⠍⠫⠇⠛⠰⠭\n⠖⠰⠝⠫⠇⠛⠰⠽",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-11",
+      "input": "\\textit a x\\sec3\\pi",
+      "expected": "⠰⠁⠭⠫⠎⠉⠼⠉⠨⠏",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-12",
+      "input": "\\sec(-20^\\circ15')=\\csc(20^\\circ15')",
+      "expected": "⠫⠎⠉⠣⠤⠼⠃⠚⠐⠴⠼⠁⠑⠐⠔⠜⠀⠶⠫⠉⠎⠣⠼⠃⠚⠐⠴⠠\n⠼⠁⠑⠐⠔⠜",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-13",
+      "input": "\\frac{M_1}{\\left(R+r\\right)^2}+\\frac{M_2}{r^2}=\\left(R+r\\right)\\frac{M_1}{R^3}",
+      "expected": "⠠⠍⠡⠂⠳⠣⠠⠗⠀⠖⠰⠗⠜⠌⠆⠀⠖⠠⠍⠡⠆⠳⠰⠗⠌⠆\n⠶⠣⠠⠗⠀⠖⠰⠗⠜⠠⠍⠡⠂⠳⠠⠗⠌⠒",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-14",
+      "input": "x \\in (-\\infty,m]",
+      "expected": "⠰⠭⠀⠐⠪⠀⠣⠤⠼⠿⠐⠀⠰⠍⠾",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-15",
+      "input": "\\frac{x+365\\times60\\%}{365}>70\\%",
+      "expected": "⠆⠰⠭⠀⠖⠼⠉⠋⠑⠀⠦⠼⠋⠚⠼⠚⠴⠀⠳⠼⠉⠋⠑⠰\n⠕⠀⠼⠛⠚⠼⠚⠴",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-16",
+      "input": "\\textstyle\\sum^{n}_{i=1}",
+      "expected": "⠸⠎⠡⠰⠊⠀⠶⠼⠁⠱⠌⠰⠝⠱",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-17",
+      "input": "\\sum^{n}_{i=1}",
+      "expected": "⠸⠎⠨⠡⠰⠊⠀⠶⠼⠁⠱⠨⠌⠰⠝⠱",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-18",
+      "input": "\\frac{4xy}{x+y}",
+      "expected": "⠆⠼⠙⠰⠭⠽⠀⠳⠰⠭⠀⠖⠰⠽⠰",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-19",
+      "input": "\\sqrt{1\\frac13}\\div\\sqrt{2\\frac13}",
+      "expected": "⠩⠱⠼⠁⠼⠁⠒⠹⠀⠲⠩⠱⠼⠆⠼⠁⠒⠹",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-20",
+      "input": "r=\\frac{\\sum_{i=1}^n\\left(x_{132}/\\overline{x}\\right)}1",
+      "expected": "⠰⠗⠀⠶⠆⠸⠎⠨⠡⠰⠊⠀⠶⠼⠁⠱⠨⠌⠰⠝⠱⠣⠰⠭⠡⠂⠒⠆⠠\n⠠⠳⠰⠭⠘⠒⠜⠀⠳⠼⠁⠰",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-21",
+      "input": "r=\\frac{\\sum_{i=1000000}^n\\left(1\\right)}{1}",
+      "expected": "⠰⠗⠀⠶⠆⠸⠎⠨⠡⠰⠊⠀⠶⠼⠁⠚⠚⠚⠚⠚⠚⠱⠨⠌⠰⠝⠱⠠\n⠣⠼⠁⠜⠀⠳⠼⠁⠰",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-22",
+      "input": "r=\\frac{\\sum_{i=1000000}^n\\big(1\\big)}{1}",
+      "expected": "⠰⠗⠀⠶⠆⠸⠎⠨⠡⠰⠊⠀⠶⠼⠁⠚⠚⠚⠚⠚⠚⠱⠨⠌⠰⠝⠱⠠\n⠣⠼⠁⠜⠀⠳⠼⠁⠰",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-23",
+      "input": "\\because\\square\\triangle\\mathrm{ABC}\\cong\\angle\\mathrm{123}",
+      "expected": "⠀⠡⠁⠀⠫⠶⠫⠲⠠⠁⠃⠉⠀⠢⠶⠫⠪⠼⠁⠃⠉",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-24",
+      "input": "\\max a_n",
+      "expected": "⠫⠍⠭⠰⠁⠡⠰⠝⠱",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-25",
+      "input": "\\int\\limits_0^1x^2\\mathrm{d}x=\\frac{1}{3}",
+      "expected": "⠮⠨⠡⠴⠨⠌⠂⠰⠭⠌⠆⠰⠙⠰⠭⠀⠶⠼⠁⠒",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-26",
+      "input": "\\nabla=\\frac{\\partial}{\\partial x}i",
+      "expected": "⠫⠴⠀⠶⠆⠹⠀⠳⠹⠰⠭⠰⠰⠊",
+      "width": 30
+    },
+    {
+      "id": "legacy-math-27",
+      "input": "\\text{1} \\text{a} \\text a",
+      "expected": "⠼⠁⠰⠁⠰⠁",
+      "width": 30
+    }
+  ]
+}

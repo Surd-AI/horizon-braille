@@ -1,0 +1,792 @@
+[
+  {
+    "id": "gf-golden-1",
+    "ruleId": "GF0019-2018-9.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "中",
+      "readings": [
+        "zhong1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "34",
+      "256",
+      "1"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-2",
+    "ruleId": "GF0019-2018-9.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "国",
+      "readings": [
+        "guo2"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "1245",
+      "135",
+      "2"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-3",
+    "ruleId": "GF0019-2018-9.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "中国",
+      "readings": [
+        "zhong1",
+        "guo2"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "34",
+      "256",
+      "1",
+      "1245",
+      "135",
+      "2"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-4",
+    "ruleId": "GF0019-2018-10.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "芬",
+      "readings": [
+        "fen1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "124",
+      "356"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-5",
+    "ruleId": "GF0019-2018-10.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "芬",
+      "readings": [
+        "fen1"
+      ],
+      "options": {
+        "tones": "full"
+      }
+    },
+    "expectedDots": [
+      "124",
+      "356",
+      "1"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-6",
+    "ruleId": "GF0019-2018-10.2.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "人",
+      "readings": [
+        "ren2"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "245",
+      "356"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-7",
+    "ruleId": "GF0019-2018-10.2.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "头",
+      "readings": [
+        "tou2"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "2345",
+      "12356",
+      "2"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-8",
+    "ruleId": "GF0019-2018-10.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "坝",
+      "readings": [
+        "ba4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "12",
+      "35"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-9",
+    "ruleId": "GF0019-2018-10.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "乐",
+      "readings": [
+        "le4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "123",
+      "26",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-10",
+    "ruleId": "GF0019-2018-10.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "字",
+      "readings": [
+        "zi4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "1356",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-11",
+    "ruleId": "GF0019-2018-10.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "育",
+      "readings": [
+        "yu4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "346"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-12",
+    "ruleId": "GF0019-2018-10.2.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "我",
+      "readings": [
+        "wo3"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "135"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-13",
+    "ruleId": "GF0019-2018-10.2.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "沃",
+      "readings": [
+        "wo4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "135",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-14",
+    "ruleId": "GF0019-2018-10.2.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "一",
+      "readings": [
+        "yi1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "24"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-15",
+    "ruleId": "GF0019-2018-10.2.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "意",
+      "readings": [
+        "yi4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "24",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-16",
+    "ruleId": "GF0019-2018-10.2.6",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "哦",
+      "readings": [
+        "o2"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "26"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-17",
+    "ruleId": "GF0019-2018-10.2.6",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": {
+      "text": "额",
+      "readings": [
+        "e2"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "26",
+      "2"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-18",
+    "ruleId": "GF0019-2018-10.2.7",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "慈爱",
+      "readings": [
+        "ci2",
+        "ai4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "14",
+      "2",
+      "246"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-19",
+    "ruleId": "GF0019-2018-10.2.7",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "事业",
+      "readings": [
+        "shi4",
+        "ye4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "156",
+      "23",
+      "15",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-20",
+    "ruleId": "GF0019-2018-10.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "问",
+      "readings": [
+        "wen4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "25",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-21",
+    "ruleId": "GF0019-2018-10.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "在",
+      "readings": [
+        "zai4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "1356",
+      "246"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-22",
+    "ruleId": "GF0019-2018-10.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "再",
+      "readings": [
+        "zai4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "1356",
+      "246",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-23",
+    "ruleId": "GF0019-2018-11.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "你",
+      "readings": [
+        "ni3"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "1345"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-24",
+    "ruleId": "GF0019-2018-11.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "他",
+      "readings": [
+        "ta1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "2345"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-25",
+    "ruleId": "GF0019-2018-11.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "她",
+      "readings": [
+        "ta1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "2345",
+      "1"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-26",
+    "ruleId": "GF0019-2018-11.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "它",
+      "readings": [
+        "ta1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "4",
+      "2345"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-27",
+    "ruleId": "GF0019-2018-11.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "他用",
+      "readings": [
+        "ta1",
+        "yong4"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "2345",
+      "35",
+      "1456"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-28",
+    "ruleId": "GF0019-2018-6",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "花",
+      "readings": [
+        "hua1"
+      ],
+      "options": {}
+    },
+    "expectedDots": [
+      "125",
+      "123456",
+      "1"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-golden-29",
+    "ruleId": "GF0019-2018-8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": {
+      "text": "。",
+      "readings": [],
+      "options": {}
+    },
+    "expectedDots": [
+      "5",
+      "23"
+    ],
+    "review": {
+      "method": "visual",
+      "locator": "GF0019 pp.2–10; chinese-standard-evidence.md §6",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739"
+    }
+  },
+  {
+    "id": "gf-spelling-9-1-negative",
+    "ruleId": "GF0019-2018-9.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": { "text": "知", "readings": ["zhi1"], "options": {} },
+    "expectedDots": ["34", "1"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.1 contrasted with §9.2's consonant-only 知; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-2-positive",
+    "ruleId": "GF0019-2018-9.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": { "text": "知", "readings": ["zhi1"], "options": {} },
+    "expectedDots": ["34", "1"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.2 example 知; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-2-negative",
+    "ruleId": "GF0019-2018-9.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": { "text": "中", "readings": ["zhong1"], "options": {} },
+    "expectedDots": ["34", "256", "1"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.1 example 中 contrasted with §9.2; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-3-positive",
+    "ruleId": "GF0019-2018-9.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": { "text": "爱", "readings": ["ai4"], "options": {} },
+    "expectedDots": ["246"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.3 example 爱 plus §10.2.4 vowel-only fourth-tone omission printed p.8; gf-page-10.png and gf-page-12.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-3-negative",
+    "ruleId": "GF0019-2018-9.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": { "text": "国", "readings": ["guo2"], "options": {} },
+    "expectedDots": ["1245", "135", "2"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.1 example 国 contrasted with §9.3; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-4-positive",
+    "ruleId": "GF0019-2018-9.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": { "text": "它", "readings": ["ta1"], "options": { "contractions": false } },
+    "expectedDots": ["4", "2345", "35"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.4 special spelling 它, independent of §11 contraction; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-4-other-positive",
+    "ruleId": "GF0019-2018-9.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": { "text": "他", "readings": ["ta1"], "options": { "contractions": false } },
+    "expectedDots": ["2345", "35"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.4 special spelling 他, independent of §11 contraction; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-spelling-9-4-negative",
+    "ruleId": "GF0019-2018-9.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": { "text": "她", "readings": ["ta1"], "options": { "contractions": false } },
+    "expectedDots": ["2345", "35", "1"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.6, §9.4 note explicitly excludes 她 from special 他/它 spelling; PDF page 10, gf-page-10.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-tone-10-2-4-negative",
+    "ruleId": "GF0019-2018-10.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": { "text": "意", "readings": ["yi4"], "options": {} },
+    "expectedDots": ["24", "23"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 printed p.8, §10.2.4 expressly defers to §10.2.5 fourth-tone yì exception; PDF page 12, gf-page-12.png", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-annex-c-alphabet-positive",
+    "ruleId": "GF0019-2018-C",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": { "letters": "abcdefghijklmnopqrstuvwxyz" },
+    "expectedDots": ["1", "12", "14", "145", "15", "124", "1245", "125", "24", "245", "13", "123", "134", "1345", "135", "1234", "12345", "1235", "234", "2345", "136", "1236", "2456", "1346", "13456", "1356"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 informative Annex C, printed p.15, PDF page 19, gf-page-19.png; all 26 English letter dot patterns", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  },
+  {
+    "id": "gf-annex-c-vw-negative",
+    "ruleId": "GF0019-2018-C",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": { "letters": "vw" },
+    "expectedDots": ["1236", "2456"],
+    "review": { "method": "visual", "locator": "GF 0019—2018 informative Annex C, printed p.15, PDF page 19, gf-page-19.png; v (1236) contrasted with w (2456)", "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739" }
+  }
+]

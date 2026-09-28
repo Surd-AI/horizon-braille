@@ -1,0 +1,741 @@
+[
+  {
+    "id": "gb18028-chemistry-1",
+    "ruleId": "GBT18028-2010-8.1.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "Co",
+    "expectedDots": [
+      "6",
+      "14",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.1.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-2",
+    "ruleId": "GBT18028-2010-8.2.2.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "CO",
+    "expectedDots": [
+      "456",
+      "14",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.2; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-3",
+    "ruleId": "GBT18028-2010-8.2.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "HCl",
+    "expectedDots": [
+      "6",
+      "125",
+      "6",
+      "14",
+      "123"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.3; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-4",
+    "ruleId": "GBT18028-2010-8.2.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "HCOONa",
+    "expectedDots": [
+      "456",
+      "125",
+      "14",
+      "135",
+      "135",
+      "6",
+      "1345",
+      "1"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.3; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-5",
+    "ruleId": "GBT18028-2010-8.2.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "H2SO4",
+    "expectedDots": [
+      "456",
+      "125",
+      "23",
+      "234",
+      "135",
+      "256"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.4; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-6",
+    "ruleId": "GBT18028-2010-8.2.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "Al2(SO4)3",
+    "expectedDots": [
+      "6",
+      "1",
+      "123",
+      "23",
+      "126",
+      "456",
+      "234",
+      "135",
+      "256",
+      "345",
+      "25"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.4; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-7",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "2HCl",
+    "expectedDots": [
+      "3456",
+      "12",
+      "6",
+      "125",
+      "6",
+      "14",
+      "123"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-8",
+    "ruleId": "GBT18028-2010-8.2.2.6",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "NH4+",
+    "expectedDots": [
+      "456",
+      "1345",
+      "125",
+      "256",
+      "46",
+      "235"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.6; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-9",
+    "ruleId": "GBT18028-2010-8.2.2.6",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "SO4^{2-}",
+    "expectedDots": [
+      "456",
+      "234",
+      "135",
+      "256",
+      "46",
+      "3456",
+      "12",
+      "36"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.6; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-10",
+    "ruleId": "GBT18028-2010-8.1.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "Fe^{3+}",
+    "expectedDots": [
+      "6",
+      "124",
+      "15",
+      "46",
+      "3456",
+      "14",
+      "6",
+      "235"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.1.2.3; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-11",
+    "ruleId": "GBT18028-2010-8.1.2.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "^{12}_{6}C",
+    "expectedDots": [
+      "16",
+      "235",
+      "34",
+      "2",
+      "23",
+      "6",
+      "14"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.1.2.2; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-12",
+    "ruleId": "GBT18028-2010-8.2.2.7",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "Na2CO3·10H2O",
+    "expectedDots": [
+      "6",
+      "1345",
+      "1",
+      "23",
+      "456",
+      "14",
+      "135",
+      "25",
+      "6",
+      "3",
+      "3456",
+      "1",
+      "245",
+      "456",
+      "125",
+      "23",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.7; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-13",
+    "ruleId": "GBT18028-2010-8.4.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "H-O-H",
+    "expectedDots": [
+      "6",
+      "125",
+      "36",
+      "6",
+      "135",
+      "36",
+      "6",
+      "125"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.4.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-14",
+    "ruleId": "GBT18028-2010-8.4.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "N#N",
+    "expectedDots": [
+      "6",
+      "1345",
+      "123456",
+      "6",
+      "1345"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.4.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-15",
+    "ruleId": "GBT18028-2010-8.4.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "O=O",
+    "expectedDots": [
+      "6",
+      "135",
+      "1346",
+      "6",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.4.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-16",
+    "ruleId": "GBT18028-2010-8.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "(g)",
+    "expectedDots": [
+      "126",
+      "56",
+      "1245",
+      "345"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-17",
+    "ruleId": "GBT18028-2010-8.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "(l)",
+    "expectedDots": [
+      "126",
+      "56",
+      "123",
+      "345"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-18",
+    "ruleId": "GBT18028-2010-8.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "(s)",
+    "expectedDots": [
+      "126",
+      "56",
+      "234",
+      "345"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-19",
+    "ruleId": "GBT18028-2010-8.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "(aq)",
+    "expectedDots": [
+      "126",
+      "56",
+      "1",
+      "12345",
+      "345"
+    ],
+    "note": "Derived literal state abbreviation from bracket and Latin type-continuity rules (§5.2.1.2/.3 and §8.2.1); not a printed aqueous-state example.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.1; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-20",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "H2↑",
+    "expectedDots": [
+      "6",
+      "125",
+      "23",
+      "56",
+      "34"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-21",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "AgCl↓",
+    "expectedDots": [
+      "6",
+      "1",
+      "1245",
+      "6",
+      "14",
+      "123",
+      "45",
+      "16"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-22",
+    "ruleId": "GBT18028-2010-8.2.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "C_n",
+    "expectedDots": [
+      "6",
+      "14",
+      "16",
+      "56",
+      "1345",
+      "156"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.4; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-23",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "C -> O",
+    "expectedDots": [
+      "6",
+      "14",
+      "SP",
+      "25",
+      "135",
+      "6",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-24",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "C <- O",
+    "expectedDots": [
+      "6",
+      "14",
+      "SP",
+      "246",
+      "25",
+      "6",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-25",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "C <=> O",
+    "expectedDots": [
+      "6",
+      "14",
+      "6",
+      "2356",
+      "2",
+      "6",
+      "135"
+    ],
+    "note": "Positive applicability: the equilibrium arrow is explicitly governed by §8.2.2.8, which requires no surrounding blanks. Different spacing does not make this a negative case.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-26",
+    "ruleId": "GBT18028-2010-8.2.2.9",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "C =[Δ] O",
+    "expectedDots": [
+      "6",
+      "14",
+      "SP",
+      "2356",
+      "45",
+      "456",
+      "256",
+      "156",
+      "6",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.9; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-27",
+    "ruleId": "GBT18028-2010-8.2.2.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "Co",
+    "expectedDots": [
+      "6",
+      "14",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.2; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-28",
+    "ruleId": "GBT18028-2010-8.2.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "2H",
+    "expectedDots": [
+      "3456",
+      "12",
+      "6",
+      "125"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.4; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-29",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "O=O",
+    "expectedDots": [
+      "6",
+      "135",
+      "1346",
+      "6",
+      "135"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-30",
+    "ruleId": "GBT18028-2010-8.2.2.14",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "2^{12}_{6}C",
+    "expectedDots": [
+      "3456",
+      "12",
+      "6",
+      "16",
+      "235",
+      "34",
+      "2",
+      "23",
+      "6",
+      "14"
+    ],
+    "note": "Short printed or independently derived chemical-context fact; modern explicit source syntax. See chemistry-standard-evidence.md. No legacy output used; no narrative wrappers.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.14; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-31",
+    "ruleId": "GBT18028-2010-8.2.2.8",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "Na+",
+    "expectedDots": [
+      "6",
+      "1345",
+      "1",
+      "46",
+      "235"
+    ],
+    "note": "Negative applicability boundary for §8.2.2.8: a terminal ionic charge sign is neither a reaction separator nor a gas/precipitate marker. Assert absence of that rule, separator semantics and spacing, in addition to the independently derived Na+ cells from §§8.1.2.1/.3.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §8.2.2.8; independently inspected chapter8 pages59–69, chemistry-standard-evidence.md and authoritative arrow correction, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    },
+    "forbiddenRuleIds": [
+      "GBT18028-2010-8.2.2.8"
+    ],
+    "forbiddenSemanticKinds": [
+      "ReactionArrow",
+      "Addition",
+      "Evolution"
+    ],
+    "forbiddenDots": [
+      "SP"
+    ]
+  },
+  {
+    "id": "gb18028-chemistry-pure-o2",
+    "ruleId": "GBT18028-2010-8.2.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "O2",
+    "expectedDots": ["6", "135", "23"],
+    "note": "Printed pure oxygen molecule O₂: lowered 2 directly follows O; no index-direction or number indicator.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T 18028-2010 printed p.61 §8.2.2.1 example O₂; official-pages/gb18028-067.png",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-chemistry-pure-negative-h2o",
+    "ruleId": "GBT18028-2010-8.2.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "H2O",
+    "expectedDots": ["456", "125", "23", "135"],
+    "note": "Applicability boundary: water is a compound, so its count follows the general formula rule §8.2.2.4, not the pure-substance rule §8.2.2.1.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T 18028-2010 printed pp.61–62 §§8.2.2.1/.4; official-pages/gb18028-067.png and gb18028-068.png",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    },
+    "forbiddenRuleIds": ["GBT18028-2010-8.2.2.1"]
+  }
+]

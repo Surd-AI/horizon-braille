@@ -1,0 +1,86 @@
+{
+  "capturedAt": "2026-09-24",
+  "policy": "Historical source and audit harnesses are not distributed or executed in this standalone repository. Original hashes are retained as provenance only; sanitized artifact names are identifiers, not resolvable paths. Legacy observations remain separate from official evidence.",
+  "sources": [
+    {
+      "sha256": "195295d255c7d2d9e1709adf8b6fdb6b6854659cb364bfda41e3a259fbc72944",
+      "kind": "historical-repository",
+      "artifact": "braille_case_test.js",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "a7edc53fd2b50fbd23665dcf552c058a8b1b684d40601dfbd8f28485ddabe077",
+      "kind": "historical-repository",
+      "artifact": "tex2braille.js",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "a7edc53fd2b50fbd23665dcf552c058a8b1b684d40601dfbd8f28485ddabe077",
+      "kind": "production-snapshot",
+      "artifact": "tex2braille.js",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "4b7a827a577779acb5a2b471a908eba247623dc244d17a9a23521de5b0e4b774",
+      "kind": "production-snapshot",
+      "artifact": "preprocess_latex.js",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "2f700f7e55053d4920240b74d94b9a7d567ced096fd6eeba333f1199f916ae06",
+      "kind": "production-snapshot",
+      "artifact": "braille_utils.py",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "d0c6ca7f181c43a9c04b523ee866ccf17b20e47fe9f49ce0392cb4bf3edc4661",
+      "kind": "production-snapshot",
+      "artifact": "dict.yaml",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "dc427f0eb28070f755f7d62fd265f0fa42eaa9dd82502cdc9faec71e2861bbcd",
+      "kind": "isolated-audit-harness",
+      "artifact": "probe-legacy.cjs",
+      "availability": "not-distributed"
+    },
+    {
+      "sha256": "abe0e66c2a169c917eacb166c083a80fdef68808caacf6f27864ec019018aa30",
+      "kind": "isolated-audit-harness",
+      "artifact": "probe-python.py",
+      "availability": "not-distributed"
+    }
+  ],
+  "standards": [
+    {
+      "standard": "GF0019-2018",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "sha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "kind": "official-scanned-pdf",
+      "artifact": "gf0019-2018.pdf",
+      "availability": "external-official-evidence-not-redistributed"
+    },
+    {
+      "standard": "GB/T18028-2010",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "sha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "kind": "official-viewer-contents-image",
+      "artifact": "gb18028-003.webp",
+      "availability": "external-official-evidence-not-redistributed"
+    },
+    {
+      "standard": "GB/T44725-2024",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "sha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "kind": "official-viewer-contents-image",
+      "artifact": "gb44725-003.webp",
+      "availability": "external-official-evidence-not-redistributed"
+    }
+  ],
+  "extraction": {
+    "sourceRevision": "48729e25eaa4d9a07679391ac9416141514dcc7e",
+    "date": "2026-09-25",
+    "privateHistoryIncluded": false,
+    "note": "Independent source export. No public upstream repository URL is asserted. Original source and captured-evidence hashes have not been recalculated from renamed identifiers."
+  }
+}

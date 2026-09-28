@@ -1,0 +1,317 @@
+[
+  {
+    "id": "layout-L01",
+    "ruleId": "GBT18028-2010-5.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "a+b",
+    "expectedDots": [
+      "56",
+      "1",
+      "0",
+      "46",
+      "235",
+      "0",
+      "56",
+      "12"
+    ],
+    "note": "Math symbol mention in prose; surrounding words use the separate checked Latin table",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L01; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L02",
+    "ruleId": "GBT18028-2010-5.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "27",
+    "expectedDots": [
+      "3456",
+      "12",
+      "1245"
+    ],
+    "note": "Ordinary numeral; no additional46 merely because input is numeric",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L02; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L03",
+    "ruleId": "GBT18028-2010-5.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "\\text{你}",
+    "expectedDots": [
+      "4",
+      "1345"
+    ],
+    "note": "One known word; no closing marker",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L03; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L04",
+    "ruleId": "GBT18028-2010-5.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "\\text{你 你 你}",
+    "expectedDots": [
+      "4",
+      "1345",
+      "0",
+      "4",
+      "1345",
+      "0",
+      "4",
+      "1345"
+    ],
+    "note": "Three consecutive words, each prefixed4",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L04; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L05",
+    "ruleId": "GBT18028-2010-5.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "\\text{你 你 你 你}",
+    "expectedDots": [
+      "4",
+      "4",
+      "1345",
+      "0",
+      "1345",
+      "0",
+      "1345",
+      "0",
+      "4",
+      "1345"
+    ],
+    "note": "Permitted compact four-word path",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L05; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L06",
+    "ruleId": "GBT18028-2010-8.2.2.12",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "你\\ce{H2O}你",
+    "expectedDots": [],
+    "note": "Conservative chemical closure156 in prose; known payload separately encoded",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L06; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L07",
+    "ruleId": "GBT18028-2010-5.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "nonblank-math-wrap",
+    "expectedDots": [
+      "1",
+      "12",
+      "14",
+      "6"
+    ],
+    "note": "Reserve mathematical line-end6",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L07; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L08",
+    "ruleId": "GBT18028-2010-5.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "blank-math-wrap",
+    "expectedDots": [
+      "1",
+      "12",
+      "14"
+    ],
+    "note": "No mathematical continuation at a blank boundary",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L08; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "layout-L09",
+    "ruleId": "GBT44725-2024-4.8.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "joined-Chinese-wrap",
+    "expectedDots": [
+      "36",
+      "145",
+      "15"
+    ],
+    "note": "Chinese connector36 starts the next line",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L09; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  },
+  {
+    "id": "layout-L10",
+    "ruleId": "GBT44725-2024-4.5.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "paragraph",
+    "expectedDots": [],
+    "note": "New paragraph; exact2 indent is editorial profile policy",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L10; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  },
+  {
+    "id": "layout-L11",
+    "ruleId": "GBT44725-2024-4.5.2.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "a　b",
+    "expectedDots": [
+      "56",
+      "1",
+      "0",
+      "0",
+      "56",
+      "12"
+    ],
+    "note": "Explicit ideographic space maps to two meaningful blank cells",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L11; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  },
+  {
+    "id": "layout-L12",
+    "ruleId": "GBT44725-2024-4.8.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "a，b、c；d：e",
+    "expectedDots": [
+      "56",
+      "1",
+      "5",
+      "0",
+      "56",
+      "12",
+      "4",
+      "0",
+      "56",
+      "14",
+      "56",
+      "0",
+      "56",
+      "145",
+      "36",
+      "0",
+      "56",
+      "15"
+    ],
+    "note": "Comma/list comma/semicolon/colon require following blank",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L12; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  },
+  {
+    "id": "layout-L13",
+    "ruleId": "GBT44725-2024-4.8.2",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "a……。",
+    "expectedDots": [
+      "56",
+      "1",
+      "5",
+      "5",
+      "5",
+      "5",
+      "23"
+    ],
+    "note": "Ellipsis followed by punctuation has no extra blank",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L13; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  },
+  {
+    "id": "layout-L14",
+    "ruleId": "GBT44725-2024-4.8.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "a·b",
+    "expectedDots": [
+      "56",
+      "1",
+      "6",
+      "3",
+      "56",
+      "12"
+    ],
+    "note": "No surrounding interpunct blanks; no split before it",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L14; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  },
+  {
+    "id": "layout-L15",
+    "ruleId": "GBT44725-2024-4.5.3.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "explicit-footer",
+    "expectedDots": [],
+    "note": "Explicit label at row26 rightedge30; 25 body rows; duplex even suppression",
+    "review": {
+      "method": "visual",
+      "locator": "layout-standard-evidence.md focused fifteen goldens L15; short derivation from named clauses, not a printed whole output",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373"
+    }
+  }
+]

@@ -1,0 +1,848 @@
+{
+  "review": null,
+  "entries": [
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "1",
+      "granularity": "chapter",
+      "id": "GF0019-2018-1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "2",
+      "granularity": "chapter",
+      "id": "GF0019-2018-2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "3",
+      "granularity": "chapter",
+      "id": "GF0019-2018-3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "4",
+      "granularity": "chapter",
+      "id": "GF0019-2018-4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "5",
+      "granularity": "chapter",
+      "id": "GF0019-2018-5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "6",
+      "granularity": "chapter",
+      "id": "GF0019-2018-6"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "7",
+      "granularity": "chapter",
+      "id": "GF0019-2018-7"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "8",
+      "granularity": "chapter",
+      "id": "GF0019-2018-8"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "9",
+      "granularity": "chapter",
+      "id": "GF0019-2018-9"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "10",
+      "granularity": "chapter",
+      "id": "GF0019-2018-10"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "11",
+      "granularity": "chapter",
+      "id": "GF0019-2018-11"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "12",
+      "granularity": "chapter",
+      "id": "GF0019-2018-12"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "A",
+      "granularity": "chapter",
+      "id": "GF0019-2018-A"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "B",
+      "granularity": "chapter",
+      "id": "GF0019-2018-B"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GF0019-2018",
+      "clause": "C",
+      "granularity": "chapter",
+      "id": "GF0019-2018-C"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "1",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "2",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "3",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "4",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "5",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "6",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-6"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "7",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-7"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-8"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "A",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-A"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "B",
+      "granularity": "chapter",
+      "id": "GBT18028-2010-B"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T44725-2024",
+      "clause": "1",
+      "granularity": "chapter",
+      "id": "GBT44725-2024-1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T44725-2024",
+      "clause": "2",
+      "granularity": "chapter",
+      "id": "GBT44725-2024-2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T44725-2024",
+      "clause": "3",
+      "granularity": "chapter",
+      "id": "GBT44725-2024-3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T44725-2024",
+      "clause": "4",
+      "granularity": "chapter",
+      "id": "GBT44725-2024-4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T44725-2024",
+      "clause": "5",
+      "granularity": "chapter",
+      "id": "GBT44725-2024-5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T44725-2024",
+      "clause": "6",
+      "granularity": "chapter",
+      "id": "GBT44725-2024-6"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.1.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.1.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.1.2.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.1.2.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.1.2.2",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.1.2.2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.1.2.3",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.1.2.3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.1.2.4",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.1.2.4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.1.2.5",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.1.2.5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.2",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.3",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.4",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.5",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.6",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.6"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.7",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.7"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.8",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.8"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.9",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.9"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.10",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.10"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.11",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.11"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.12",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.12"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.13",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.13"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.14",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.14"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.15",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.15"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.2.2.16",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.2.2.16"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.2.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.2.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.2.2",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.2.2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.2.3",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.2.3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.2.4",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.2.4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.2.5",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.2.5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.3.2.6",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.3.2.6"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.1",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.1"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.2",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.2"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.3",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.3"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.4",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.4"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.5",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.5"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.6",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.6"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.7",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.7"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.8",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.8"
+    },
+    {
+      "applicability": "applicable",
+      "standard": "GB/T18028-2010",
+      "clause": "8.4.2.9",
+      "granularity": "clause",
+      "id": "GBT18028-2010-8.4.2.9"
+    },
+    {
+      "id": "GF0019-2018-9.1",
+      "standard": "GF0019-2018",
+      "clause": "9.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-9.2",
+      "standard": "GF0019-2018",
+      "clause": "9.2",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-9.3",
+      "standard": "GF0019-2018",
+      "clause": "9.3",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-9.4",
+      "standard": "GF0019-2018",
+      "clause": "9.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.1",
+      "standard": "GF0019-2018",
+      "clause": "10.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.1",
+      "standard": "GF0019-2018",
+      "clause": "10.2.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.2",
+      "standard": "GF0019-2018",
+      "clause": "10.2.2",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.3",
+      "standard": "GF0019-2018",
+      "clause": "10.2.3",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.4",
+      "standard": "GF0019-2018",
+      "clause": "10.2.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.5",
+      "standard": "GF0019-2018",
+      "clause": "10.2.5",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.6",
+      "standard": "GF0019-2018",
+      "clause": "10.2.6",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.7",
+      "standard": "GF0019-2018",
+      "clause": "10.2.7",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-10.2.8",
+      "standard": "GF0019-2018",
+      "clause": "10.2.8",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-11.1",
+      "standard": "GF0019-2018",
+      "clause": "11.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-11.2",
+      "standard": "GF0019-2018",
+      "clause": "11.2",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-12.2.1",
+      "standard": "GF0019-2018",
+      "clause": "12.2.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-12.2.4",
+      "standard": "GF0019-2018",
+      "clause": "12.2.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GF0019-2018-12.2.5",
+      "standard": "GF0019-2018",
+      "clause": "12.2.5",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-5.1",
+      "standard": "GB/T18028-2010",
+      "clause": "5.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-5.2",
+      "standard": "GB/T18028-2010",
+      "clause": "5.2",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-5.3",
+      "standard": "GB/T18028-2010",
+      "clause": "5.3",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-5.4",
+      "standard": "GB/T18028-2010",
+      "clause": "5.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.1",
+      "standard": "GB/T18028-2010",
+      "clause": "6.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.2",
+      "standard": "GB/T18028-2010",
+      "clause": "6.2",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.3",
+      "standard": "GB/T18028-2010",
+      "clause": "6.3",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.4",
+      "standard": "GB/T18028-2010",
+      "clause": "6.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.5",
+      "standard": "GB/T18028-2010",
+      "clause": "6.5",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.6",
+      "standard": "GB/T18028-2010",
+      "clause": "6.6",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.7",
+      "standard": "GB/T18028-2010",
+      "clause": "6.7",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.8",
+      "standard": "GB/T18028-2010",
+      "clause": "6.8",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.9",
+      "standard": "GB/T18028-2010",
+      "clause": "6.9",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.12",
+      "standard": "GB/T18028-2010",
+      "clause": "6.12",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.14",
+      "standard": "GB/T18028-2010",
+      "clause": "6.14",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.15",
+      "standard": "GB/T18028-2010",
+      "clause": "6.15",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.17",
+      "standard": "GB/T18028-2010",
+      "clause": "6.17",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-6.18",
+      "standard": "GB/T18028-2010",
+      "clause": "6.18",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-7.2.1",
+      "standard": "GB/T18028-2010",
+      "clause": "7.2.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-7.2.4",
+      "standard": "GB/T18028-2010",
+      "clause": "7.2.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT18028-2010-7.2.5",
+      "standard": "GB/T18028-2010",
+      "clause": "7.2.5",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.5.1",
+      "standard": "GB/T44725-2024",
+      "clause": "4.5.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.5.2.1",
+      "standard": "GB/T44725-2024",
+      "clause": "4.5.2.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.5.2.3",
+      "standard": "GB/T44725-2024",
+      "clause": "4.5.2.3",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.5.3.1",
+      "standard": "GB/T44725-2024",
+      "clause": "4.5.3.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.8",
+      "standard": "GB/T44725-2024",
+      "clause": "4.8",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.8.1",
+      "standard": "GB/T44725-2024",
+      "clause": "4.8.1",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.8.2",
+      "standard": "GB/T44725-2024",
+      "clause": "4.8.2",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.8.3",
+      "standard": "GB/T44725-2024",
+      "clause": "4.8.3",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.8.4",
+      "standard": "GB/T44725-2024",
+      "clause": "4.8.4",
+      "granularity": "clause",
+      "applicability": "applicable"
+    },
+    {
+      "id": "GBT44725-2024-4.8.5",
+      "standard": "GB/T44725-2024",
+      "clause": "4.8.5",
+      "granularity": "clause",
+      "applicability": "applicable"
+    }
+  ],
+  "complete": false,
+  "policy": "Independent minimum inventory. Preserve established IDs while expanding clauses. Human review of complete applicability and all exclusions is required; never regenerate from a filtered registry. This is evidence bookkeeping, not automatic certification.",
+  "schemaVersion": 1
+}

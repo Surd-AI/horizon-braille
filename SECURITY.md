@@ -1,0 +1,7 @@
+# Security
+
+The core runs offline. Treat source strings, imported decisions and provider output as untrusted data. Bounds, preserved source identity and diagnostics are part of the interface; do not bypass them. Conversion output is not a compliance certificate and should be reviewed before educational, accessibility or publishing use.
+
+The optional API is a loopback development service, not a hardened public service. It restricts hosts/origins and request sizes. Never expose it by binding/proxying to a public interface without a separate deployment security design. Configure a token through a server-side environment variable, or enter your own key in the local demo: the latter keeps it in page memory and forwards it through the loopback API without persistent browser storage. Never embed shared credentials in client bundles or checked-in files. When configured, the editor automatically requests disambiguation after input settles, transmitting bounded question contexts to the provider. Use the offline core without an online provider for material that must remain local.
+
+There is no private disclosure email or public security advisory endpoint configured in this standalone source export. If the hosting repository provides private vulnerability reporting, use that channel. Otherwise contact its maintainer through an established private channel before sharing sensitive details; do not put credentials, personal documents or exploit payloads in public issues. No unsupported promise of response times or maintained release branches is made.

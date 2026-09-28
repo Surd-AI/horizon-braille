@@ -1,0 +1,310 @@
+.hz {
+  color: #202d3b;
+  background: #f8fafb;
+  font:
+    15px/1.65 system-ui,
+    "Microsoft YaHei",
+    sans-serif;
+  border: 1px solid #d7e0e6;
+  border-radius: 12px;
+  padding: clamp(16px, 3vw, 32px);
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.hz * {
+  box-sizing: border-box;
+}
+.hz h1 {
+  font-size: clamp(24px, 4vw, 34px);
+  line-height: 1.25;
+  margin: 4px 0 12px;
+}
+.hz h2 {
+  font-size: 21px;
+}
+.hz .eyebrow {
+  color: #26726e;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.15em;
+}
+.hz .preview-note {
+  background: #edf5f3;
+  border: 1px solid #c9e2dc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 12px 0 16px;
+}
+.hz .preview-note strong {
+  color: #195b55;
+}
+.hz .preview-note p {
+  margin: 4px 0;
+}
+.hz a {
+  color: #176c83;
+  text-underline-offset: 3px;
+}
+.hz .account-help {
+  color: #536273;
+  margin: 6px 0 12px;
+}
+.hz .account-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 4px;
+}
+.hz label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+  flex: 1;
+  min-width: 160px;
+}
+.hz input,
+.hz select,
+.hz textarea,
+.hz button {
+  font: inherit;
+  color: inherit;
+  max-width: 100%;
+  border: 1px solid #aebecb;
+  border-radius: 6px;
+  background: white;
+  padding: 8px 10px;
+}
+.hz input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.hz input[type="number"] {
+  width: 150px;
+}
+.hz textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+  line-height: 1.6;
+  tab-size: 2;
+  font-weight: 400;
+}
+.hz .braille {
+  font:
+    23px/1.65 Consolas,
+    "Segoe UI Symbol",
+    monospace;
+}
+.hz textarea[readonly] {
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+}
+.hz button {
+  cursor: pointer;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  margin: 3px 4px 3px 0;
+}
+.hz button:hover {
+  background: #edf5f6;
+}
+.hz button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.hz :focus-visible {
+  outline: 3px solid #007d95;
+  outline-offset: 2px;
+}
+.hz .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  margin: 12px 0;
+}
+.hz fieldset,
+.hz details {
+  border: 1px solid #d7e0e6;
+  border-radius: 8px;
+  margin: 18px 0;
+  padding: 12px 16px;
+  background: #fff;
+}
+.hz summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.hz .status {
+  background: #e5f2ef;
+  border-left: 4px solid #26726e;
+  padding: 12px 16px;
+  overflow-wrap: anywhere;
+}
+.hz .error:empty {
+  display: none;
+}
+.hz .error,
+.hz .diagnostic.error {
+  border-left: 4px solid #ad3633;
+  background: #fff1ee;
+  padding: 10px;
+}
+.hz .diagnostic {
+  padding: 10px;
+  border-bottom: 1px solid #e1e8ed;
+  overflow-wrap: anywhere;
+}
+.hz .diagnostic.warning {
+  border-left: 4px solid #b37813;
+}
+.hz .diagnostic p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+.hz .choice {
+  padding: 10px;
+  border-bottom: 1px solid #e1e8ed;
+}
+.hz .mapping,
+.hz .word {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.hz .mapping.selected {
+  background: #d2ece7;
+  border: 2px solid #23685f;
+}
+.hz small {
+  color: #536273;
+}
+.hz p {
+  overflow-wrap: anywhere;
+}
+.hz legend {
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .hz {
+    padding: 14px;
+    border-radius: 0;
+  }
+  .hz .toolbar {
+    gap: 8px;
+  }
+  .hz fieldset,
+  .hz details {
+    padding: 10px;
+  }
+  .hz input[type="number"] {
+    width: 100%;
+  }
+  .hz label {
+    min-width: 130px;
+  }
+  .hz .braille {
+    font-size: 20px;
+  }
+}
+
+.hz .workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 22px;
+}
+.hz .workspace section {
+  min-width: 0;
+}
+.hz .workspace h2 {
+  margin: 10px 0;
+}
+.hz .workspace .toolbar {
+  gap: 5px;
+}
+.hz .workspace button {
+  font-size: 13px;
+}
+@media (max-width: 900px) {
+  .hz .workspace {
+    grid-template-columns: 1fr;
+  }
+  .hz textarea[aria-label="原文输入"] {
+    height: 180px;
+  }
+}
+
+.hz.compact {
+  padding: 16px;
+}
+.hz.compact header .eyebrow,
+.hz.compact header > p:last-child {
+  display: none;
+}
+.hz.compact h1 {
+  font-size: 20px;
+}
+.hz.compact .workspace {
+  display: block;
+}
+.hz.compact .status {
+  margin: 8px 0;
+}
+.hz.compact details {
+  margin: 10px 0;
+}
+.hz.compact .workspace label {
+  margin: 6px 0;
+}
+.hz.compact .workspace input[type="number"] {
+  width: 120px;
+}
+
+.hz .aligned-preview {
+  max-height: 420px;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #c9d9e8;
+  border-radius: 8px;
+  background: #fff;
+}
+.hz .aligned-preview-row {
+  display: flex;
+  width: max-content;
+  min-height: 76px;
+  align-items: stretch;
+}
+.hz .aligned-preview-unit {
+  display: flex;
+  width: calc(var(--cells) * 1.4em + 4px);
+  min-width: 1.4em;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4px 2px;
+  overflow: hidden;
+  border: 0;
+  border-left: 1px solid #7da4c8;
+  border-right: 1px solid #7da4c8;
+  border-radius: 0;
+  background: #eef6fd;
+  text-align: center;
+  white-space: nowrap;
+}
+.hz .aligned-preview-unit.kind-word { background: #f2f7ee; }
+.hz .aligned-preview-unit.kind-formula { background: #eef2ff; }
+.hz .aligned-preview-unit.kind-spacing { background: #fff; border-color: transparent; }
+.hz .aligned-preview-unit small {
+  overflow: hidden;
+  color: #4b5b6a;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.hz .aligned-preview-cells {
+  font: 23px/1.25 Consolas, "Segoe UI Symbol", monospace;
+  letter-spacing: 0;
+}

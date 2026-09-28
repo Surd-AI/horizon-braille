@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vitest/
+.env*
+!.env.example
+*.tgz
+*.tsbuildinfo
+standards/local/
+.local/
+__pycache__/
+*.py[cod]

@@ -1,0 +1,98 @@
+{
+  "provenance": "legacy",
+  "reviewed": false,
+  "source": {
+    "file": "python-probe-results.json",
+    "sha256": "2427b864884bf5d83610a6d6e894ae3a209cc052c6b463b3fc658cf9029b6faa"
+  },
+  "note": "Captured isolated audit observations; defects are not expected standards behavior.",
+  "observations": {
+    "splitter": [
+      {
+        "input": "$x$",
+        "parts": [],
+        "rejoined": "",
+        "preserves_order_and_content": false
+      },
+      {
+        "input": "$x$后文",
+        "parts": [
+          "后",
+          "文",
+          "$x$"
+        ],
+        "rejoined": "后文$x$",
+        "preserves_order_and_content": false
+      },
+      {
+        "input": "前文$x$后文",
+        "parts": [
+          "前",
+          "文",
+          "$x$",
+          "后",
+          "文"
+        ],
+        "rejoined": "前文$x$后文",
+        "preserves_order_and_content": true
+      },
+      {
+        "input": "$a$$b$",
+        "parts": [
+          "b",
+          "$",
+          "$a$$"
+        ],
+        "rejoined": "b$$a$$",
+        "preserves_order_and_content": false
+      },
+      {
+        "input": "前文$$a\nb$$后文",
+        "parts": [
+          "前",
+          "文",
+          "$",
+          "$",
+          "a",
+          "\n",
+          "b",
+          "$",
+          "$",
+          "后",
+          "文"
+        ],
+        "rejoined": "前文$$a\nb$$后文",
+        "preserves_order_and_content": true
+      },
+      {
+        "input": "价格\\$5，$x$",
+        "parts": [
+          "价",
+          "格",
+          "\\",
+          "$5,$",
+          "x",
+          "$"
+        ],
+        "rejoined": "价格\\$5,$x$",
+        "preserves_order_and_content": false
+      }
+    ],
+    "unavailable_math_dependency": [
+      {
+        "input": "$x$",
+        "output": "",
+        "raised": null
+      },
+      {
+        "input": "$$",
+        "raised": "IndexError"
+      },
+      {
+        "input": "",
+        "raised": "IndexError"
+      }
+    ],
+    "scope": "Existing functions extracted by AST; no production imports, processes, or network calls."
+  }
+}

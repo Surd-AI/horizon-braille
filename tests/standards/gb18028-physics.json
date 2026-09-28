@@ -1,0 +1,174 @@
+[
+  {
+    "id": "gb18028-physics-1",
+    "ruleId": "GBT18028-2010-5.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "3 m",
+    "expectedDots": [
+      "3456",
+      "14",
+      "56",
+      "134"
+    ],
+    "note": "Short fact constructed from independently visually checked symbol tables and usage rules; not a copied legacy output.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §5.3; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-2",
+    "ruleId": "GBT18028-2010-5.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "5 kg",
+    "expectedDots": [
+      "3456",
+      "15",
+      "56",
+      "13",
+      "1245"
+    ],
+    "note": "Short fact constructed from independently visually checked symbol tables and usage rules; not a copied legacy output.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §5.3; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-3",
+    "ruleId": "GBT18028-2010-5.3",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "3 A",
+    "expectedDots": [
+      "3456",
+      "14",
+      "6",
+      "1"
+    ],
+    "note": "Short fact constructed from independently visually checked symbol tables and usage rules; not a copied legacy output.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §5.3; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-4",
+    "ruleId": "GBT18028-2010-7.2.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "m/s",
+    "expectedDots": [
+      "56",
+      "134",
+      "6",
+      "1256",
+      "56",
+      "234"
+    ],
+    "note": "Short fact constructed from independently visually checked symbol tables and usage rules; not a copied legacy output.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §7.2.5; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-5",
+    "ruleId": "GBT18028-2010-7.2.1",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "Pa",
+    "expectedDots": [
+      "6",
+      "1234",
+      "56",
+      "1"
+    ],
+    "note": "Short fact constructed from independently visually checked symbol tables and usage rules; not a copied legacy output.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §7.2.1; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-6",
+    "ruleId": "GBT18028-2010-7.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "positive",
+    "input": "kg m/s^2",
+    "expectedDots": [
+      "56",
+      "13",
+      "1245",
+      "3",
+      "56",
+      "134",
+      "6",
+      "1256",
+      "56",
+      "234",
+      "34",
+      "23"
+    ],
+    "note": "Short fact constructed from independently visually checked symbol tables and usage rules; not a copied legacy output.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §7.2.4; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-7",
+    "ruleId": "GBT18028-2010-7.2.4",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "3\\,m",
+    "expectedDots": [
+      "3456",
+      "14",
+      "56",
+      "134"
+    ],
+    "note": "Quantity/unit adjacency is not a unit product; no product dot.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §7.2.4; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  },
+  {
+    "id": "gb18028-physics-8",
+    "ruleId": "GBT18028-2010-7.2.5",
+    "provenance": "official",
+    "reviewed": true,
+    "kind": "negative",
+    "input": "m s",
+    "expectedDots": [
+      "56",
+      "134",
+      "3",
+      "56",
+      "234"
+    ],
+    "note": "Unit product is not a quotient; no slash symbol.",
+    "review": {
+      "method": "visual",
+      "locator": "GB/T18028-2010 §7.2.5; math-standard-evidence.md independent visual transcription, 2026-09-24",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392"
+    }
+  }
+]

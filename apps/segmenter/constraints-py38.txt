@@ -1,0 +1,27 @@
+# Tested Linux/Python 3.8 environment. No private wheel URLs or paths.
+certifi==2025.8.3
+charset-normalizer==3.4.3
+filelock==3.16.1
+fsspec==2025.3.0
+hanlp==2.1.3
+hanlp_common==0.0.23
+hanlp_downloader==0.0.25
+hanlp_trie==0.0.5
+huggingface-hub==0.23.5
+idna==3.10
+numpy==1.24.4
+packaging==24.2
+phrasetree==0.0.9
+pynvml==11.5.3
+PyYAML==6.0.2
+regex==2024.11.6
+requests==2.32.4
+sentencepiece==0.2.0
+termcolor==2.4.0
+tokenizers==0.13.3
+toposort==1.5
+torch==1.12.1+cu113
+tqdm==4.67.1
+transformers==4.24.0
+typing_extensions==4.13.2
+urllib3==1.26.20

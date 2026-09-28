@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "declaration": true,
+    "rootDir": "packages/core/src",
+    "outDir": "dist/core/esm",
+    "newLine": "lf"
+  },
+  "include": ["packages/core/src/**/*.ts"]
+}

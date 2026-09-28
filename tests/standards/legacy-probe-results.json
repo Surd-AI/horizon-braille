@@ -1,0 +1,154 @@
+{
+  "provenance": "legacy",
+  "reviewed": false,
+  "source": {
+    "file": "legacy-probe-results.json",
+    "sha256": "8282d2b078a530637ca7f887c5ef8b8bbcc80718516b4b285e4252ee8f5b5c2f"
+  },
+  "note": "Captured isolated audit observations; defects are not expected standards behavior.",
+  "observations": {
+    "cases": [
+      {
+        "id": "basic",
+        "input": "1+2=3",
+        "width": 30,
+        "output": "⠼⠁⠀⠖⠼⠃⠀⠶⠼⠉",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          10
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "ratio",
+        "input": "a:b",
+        "width": 30,
+        "output": "⠰⠁⠐⠒⠰⠃",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          6
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "time",
+        "input": "12:30",
+        "width": 30,
+        "output": "⠼⠁⠃⠐⠒⠼⠉⠚",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          8
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "chem-water",
+        "input": "\\ce{H2O}",
+        "width": 30,
+        "output": "⠠⠓⠼⠃⠠⠕",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          6
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "chem-reaction",
+        "input": "\\ce{2H2 + O2 -> 2H2O}",
+        "width": 30,
+        "output": "⠼⠃⠠⠓⠼⠃⠀⠖⠠⠕⠼⠃⠀⠤⠀⠕⠀⠼⠃⠠⠓⠼⠃⠠⠕",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          25
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "unknown",
+        "input": "\\notACommand{x}",
+        "width": 30,
+        "output": "⠰⠭",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          2
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "long-token",
+        "input": "12345678901234567890",
+        "width": 4,
+        "output": "⠠\n⠼⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚⠁⠃⠉⠙⠑⠋⠛⠓⠊⠚",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          1,
+          21
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "nested",
+        "input": "\\frac{1}{\\sqrt{x+2}}",
+        "width": 8,
+        "output": "⠼⠁⠳⠩⠱⠰⠭\n⠖⠼⠃⠹",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          7,
+          4
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "chinese",
+        "input": "\\text{中国}",
+        "width": 30,
+        "output": "",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          0
+        ],
+        "silentEmpty": true
+      },
+      {
+        "id": "matrix",
+        "input": "\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}",
+        "width": 12,
+        "output": "⠪⠄⠼⠁⠼⠃⠨⠳⠼⠉⠠\n⠼⠙⠈⠕",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          11,
+          4
+        ],
+        "silentEmpty": false
+      },
+      {
+        "id": "empty",
+        "input": "",
+        "width": 30,
+        "output": "",
+        "error": null,
+        "loggedErrors": [],
+        "lineWidths": [
+          0
+        ],
+        "silentEmpty": false
+      }
+    ],
+    "legacyFixtureComparison": {
+      "total": 27,
+      "passed": 27,
+      "failures": [],
+      "note": "Legacy expectations are regression examples, not independently certified standard fixtures."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "fullStandardSupport": false,
+  "advertisedRuleIds": [],
+  "inventoryComplete": false,
+  "inventoryGranularity": "chapter-level; individual rules and applicability pending domain tasks",
+  "reason": "The registry has narrowly verified GF0019 omission rules with independently reviewed positive and negative fixtures. Other implemented scopes remain unverified; the chapter-level inventory is not exhaustive individual-rule coverage. Run verify:coverage for current counts."
+}

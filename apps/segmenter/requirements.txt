@@ -1,0 +1,10 @@
+# Python 3.8 / legacy Pascal profile; install CUDA 11.3 torch from its official wheel index.
+torch==1.12.1+cu113
+hanlp==2.1.3
+transformers==4.24.0
+tokenizers==0.13.3
+huggingface-hub==0.23.5
+numpy==1.24.4
+sentencepiece==0.2.0
+# Older isolated host Python uses OpenSSL 1.0.2; all runtime resources are preloaded.
+urllib3==1.26.20

@@ -1,0 +1,61 @@
+{
+  "name": "simpletex-braille",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "vitest run --exclude \"tests/e2e/**\"",
+    "typecheck": "tsc --noEmit",
+    "dev": "vite",
+    "build:playground": "vite build",
+    "build:browser": "node scripts/build-browser.mjs",
+    "verify:coverage": "node --experimental-strip-types scripts/verify-coverage.ts",
+    "build:api": "tsc -p apps/api/tsconfig.json",
+    "start:api": "npm run build:api && node --env-file-if-exists=.env.local .local/api/apps/api/src/start.js",
+    "test:browser": "vitest run tests/e2e",
+    "test:all": "vitest run",
+    "build": "node scripts/build-core.mjs",
+    "prepack": "npm run build",
+    "test:package": "node scripts/verify-package.mjs",
+    "example": "node examples/convert.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.4",
+    "fast-check": "4.10.2",
+    "playwright": "1.58.2",
+    "typescript": "5.9.3",
+    "vite": "8.3.0",
+    "vitest": "4.1.11"
+  },
+  "dependencies": {
+    "pinyin-pro": "3.29.4"
+  },
+  "description": "Pure TypeScript core for Chinese text, mathematics, chemistry and physics braille conversion.",
+  "license": "Apache-2.0",
+  "author": "SimpleTex contributors",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "main": "./dist/core/cjs/index.js",
+  "module": "./dist/core/esm/index.js",
+  "types": "./dist/core/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/core/esm/index.d.ts",
+        "default": "./dist/core/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/core/cjs/index.d.ts",
+        "default": "./dist/core/cjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/core/",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "NOTICE",
+    "THIRD-PARTY-NOTICES.md"
+  ]
+}

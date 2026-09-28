@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "dist/browser/types",
+    "rootDir": ".",
+    "newLine": "lf"
+  },
+  "include": [
+    "packages/core/src/**/*.ts",
+    "apps/playground/src/**/*.ts",
+    "standards/*.json"
+  ],
+  "exclude": ["apps/playground/src/main.ts"]
+}

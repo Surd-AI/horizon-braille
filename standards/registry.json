@@ -1,0 +1,1855 @@
+[
+  {
+    "id": "GF0019-2018-1",
+    "standard": "GF0019-2018",
+    "clause": "1",
+    "scope": "范围",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-2",
+    "standard": "GF0019-2018",
+    "clause": "2",
+    "scope": "规范性引用文件",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-3",
+    "standard": "GF0019-2018",
+    "clause": "3",
+    "scope": "术语和定义",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-4",
+    "standard": "GF0019-2018",
+    "clause": "4",
+    "scope": "总则",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 2; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-5",
+    "standard": "GF0019-2018",
+    "clause": "5",
+    "scope": "声母符号",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 2; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Tables implemented; complete per-symbol positive/negative reviewed fixtures pending."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-6",
+    "standard": "GF0019-2018",
+    "clause": "6",
+    "scope": "韵母符号",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 3; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Tables implemented; complete per-symbol positive/negative reviewed fixtures pending."
+    },
+    "fixtureIds": [
+      "gf-golden-28"
+    ]
+  },
+  {
+    "id": "GF0019-2018-7",
+    "standard": "GF0019-2018",
+    "clause": "7",
+    "scope": "声调符号",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 4; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Tables implemented; complete per-symbol positive/negative reviewed fixtures pending."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-8",
+    "standard": "GF0019-2018",
+    "clause": "8",
+    "scope": "标点符号",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 4; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Tables implemented; complete per-symbol positive/negative reviewed fixtures pending."
+    },
+    "fixtureIds": [
+      "gf-golden-29"
+    ]
+  },
+  {
+    "id": "GF0019-2018-9",
+    "standard": "GF0019-2018",
+    "clause": "9",
+    "scope": "拼写规则",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 6; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-10",
+    "standard": "GF0019-2018",
+    "clause": "10",
+    "scope": "标调规则",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 6; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-11",
+    "standard": "GF0019-2018",
+    "clause": "11",
+    "scope": "简写规则",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 9; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-12",
+    "standard": "GF0019-2018",
+    "clause": "12",
+    "scope": "分词连写规则",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 9; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-A",
+    "standard": "GF0019-2018",
+    "clause": "A",
+    "scope": "布莱尔盲文符号国际通用排列顺序（资料性）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 13; chapter title visually checked against contents",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-B",
+    "standard": "GF0019-2018",
+    "clause": "B",
+    "scope": "盲文阿拉伯数字（资料性）；已支持普通数字及①–⑩的降位写法",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed page 14; Annex B number sign, digit table and encircled-number examples; PDF page 18, gf-page-18.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "The informative annex is partly implemented: ordinary Arabic numerals and bounded U+2460–U+2469 circled numerals. Circled forms outside that range remain unsupported; no full annex claim."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-C",
+    "standard": "GF0019-2018",
+    "clause": "C",
+    "scope": "盲文英语字母（资料性）",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed p.15, informative Annex C alphabet table; PDF page 19, gf-page-19.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "All 26 letter dot patterns were independently transcribed and tested; this informative table alone does not verify foreign-word markers or general prose spelling."
+    },
+    "fixtureIds": ["gf-annex-c-alphabet-positive", "gf-annex-c-vw-negative"]
+  },
+  {
+    "id": "GBT18028-2010-1",
+    "standard": "GB/T18028-2010",
+    "clause": "1",
+    "scope": "范围",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-2",
+    "standard": "GB/T18028-2010",
+    "clause": "2",
+    "scope": "规范性引用文件",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-3",
+    "standard": "GB/T18028-2010",
+    "clause": "3",
+    "scope": "术语和定义",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-4",
+    "standard": "GB/T18028-2010",
+    "clause": "4",
+    "scope": "数学、物理、化学符号中盲符的结构与参数",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 2; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-5",
+    "standard": "GB/T18028-2010",
+    "clause": "5",
+    "scope": "数学、物理、化学基本符号",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 2; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-6",
+    "standard": "GB/T18028-2010",
+    "clause": "6",
+    "scope": "数学符号",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 8; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-7",
+    "standard": "GB/T18028-2010",
+    "clause": "7",
+    "scope": "物理学符号",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 51; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8",
+    "standard": "GB/T18028-2010",
+    "clause": "8",
+    "scope": "化学符号",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 59; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-A",
+    "standard": "GB/T18028-2010",
+    "clause": "A",
+    "scope": "物理学符号（规范性附录）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 75; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-B",
+    "standard": "GB/T18028-2010",
+    "clause": "B",
+    "scope": "ASCII码与盲文的对应表（资料性附录）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 109; chapter title visually checked against contents",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-1",
+    "standard": "GB/T44725-2024",
+    "clause": "1",
+    "scope": "范围",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-2",
+    "standard": "GB/T44725-2024",
+    "clause": "2",
+    "scope": "规范性引用文件",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-3",
+    "standard": "GB/T44725-2024",
+    "clause": "3",
+    "scope": "术语和定义",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "printed page 1; chapter title visually checked against contents",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-4",
+    "standard": "GB/T44725-2024",
+    "clause": "4",
+    "scope": "盲文图书",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "printed page 2; chapter title visually checked against contents",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-5",
+    "standard": "GB/T44725-2024",
+    "clause": "5",
+    "scope": "盲文期刊",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "printed page 12; chapter title visually checked against contents",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-6",
+    "standard": "GB/T44725-2024",
+    "clause": "6",
+    "scope": "内部资料性出版物",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "printed page 16; chapter title visually checked against contents",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Chapter inventory only; expand into individual applicable clauses before claiming full coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.1.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.1.1",
+    "scope": "元素符号符号表",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 59",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause heading and applicability read visually by parent research; individual dot fixtures pending."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.1.2.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.1.2.1",
+    "scope": "Modern element letters; single-capital and element-internal lowercase",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.1.2.1; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-1"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.1.2.2",
+    "standard": "GB/T18028-2010",
+    "clause": "8.1.2.2",
+    "scope": "Explicit integer isotope atomic/mass left indices",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.1.2.2; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-11"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.1.2.3",
+    "standard": "GB/T18028-2010",
+    "clause": "8.1.2.3",
+    "scope": "Explicit ionic charge; ordinary digits, plus separator",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.1.2.3; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-10"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.1.2.4",
+    "standard": "GB/T18028-2010",
+    "clause": "8.1.2.4",
+    "scope": "元素符号使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.1; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.1.2.5",
+    "standard": "GB/T18028-2010",
+    "clause": "8.1.2.5",
+    "scope": "Left atomic number, left mass number, element, right atom count and right ionic charge in prescribed order; bounded explicit isotope syntax",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T 18028-2010 printed p.60 §8.1.2.5; official-pages/gb18028-066.png",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Positive and negative AST-order tests cover explicit isotope syntax; complete clause symbol variants and printed dot-by-dot review remain pending."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.2.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.1",
+    "scope": "Selected reaction, state, heat, electron, and hydrate symbols; aq is derived literal",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.1; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-16",
+      "gb18028-chemistry-17",
+      "gb18028-chemistry-18",
+      "gb18028-chemistry-19"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.1",
+    "scope": "Pure-substance single-element molecular formulas with optional lowered integer atom count; excludes compounds",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T 18028-2010 printed p.61 §8.2.2.1 and p.62 §8.2.2.4; official-pages/gb18028-067.png and gb18028-068.png",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Official O₂ positive and H₂O negative applicability fixtures reviewed; extended formula and publication-level completeness remain unverified."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-pure-o2",
+      "gb18028-chemistry-pure-negative-h2o"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.2",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.2",
+    "scope": "Continuous capital-only element sequences",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.2; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-2",
+      "gb18028-chemistry-27"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.3",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.3",
+    "scope": "Single-capital switch before mixed-case element",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.3; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-3",
+      "gb18028-chemistry-4"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.4",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.4",
+    "scope": "Integer counts, round/square groups, single-letter symbolic indices",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.4; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-5",
+      "gb18028-chemistry-6",
+      "gb18028-chemistry-22",
+      "gb18028-chemistry-28"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.5",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.5",
+    "scope": "分子式和化学反应式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.2; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.6",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.6",
+    "scope": "Explicit polyatomic ionic charges",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.6; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-8",
+      "gb18028-chemistry-9"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.7",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.7",
+    "scope": "Hydrates and integer hydrate coefficients",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.7; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-12"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.8",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.8",
+    "scope": "Directional/equilibrium/equality reaction signs, addition, gas/precipitate; arrow blank before only",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.8; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-7",
+      "gb18028-chemistry-20",
+      "gb18028-chemistry-21",
+      "gb18028-chemistry-23",
+      "gb18028-chemistry-24",
+      "gb18028-chemistry-25",
+      "gb18028-chemistry-29",
+      "gb18028-chemistry-31"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.9",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.9",
+    "scope": "Above/below heat, Latin label, or Chinese condition; delegates Chinese and word markers",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.9; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-26"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.10",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.10",
+    "scope": "二次分解反应：显式线性表示已实现，平面表示待实现",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed p.64 §8.2.2.10, official viewer page 70; arrow symbols 37/38 printed p.61",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Only explicit linear source syntax is implemented and tested; the original standard's planar example and automatic graph flattening remain unsupported."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.11",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.11",
+    "scope": "分子式和化学反应式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.2; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.12",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.12",
+    "scope": "分子式和化学反应式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.2; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": [
+      "layout-L06"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.13",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.13",
+    "scope": "分子式和化学反应式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.2; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.14",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.14",
+    "scope": "Separator before isotope when preceded by numeral/letter/bracket",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.2.2.14; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-30"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.15",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.15",
+    "scope": "分子式和化学反应式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.2; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.2.2.16",
+    "standard": "GB/T18028-2010",
+    "clause": "8.2.2.16",
+    "scope": "分子式和化学反应式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.2; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.1",
+    "scope": "电子式符号表",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 66",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause heading and applicability read visually by parent research; individual dot fixtures pending."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.2.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.2.1",
+    "scope": "电子式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.3; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.2.2",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.2.2",
+    "scope": "电子式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.3; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.2.3",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.2.3",
+    "scope": "电子排布简写：显式 [Ne]/[Ar] 核心加轨道序列",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed pp.66–67 §8.3.2.3, official viewer pages 72–73",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Only explicit [Ne] and [Ar] examples and complete linear orbital suffixes are supported. Other noble-gas cores, orbital diagrams and Lewis arrangements remain unsupported."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.2.4",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.2.4",
+    "scope": "电子式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.3; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.2.5",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.2.5",
+    "scope": "电子式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.3; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.3.2.6",
+    "standard": "GB/T18028-2010",
+    "clause": "8.3.2.6",
+    "scope": "电子式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.3; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.1",
+    "scope": "结构式符号表",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed page 68",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause heading and applicability read visually by parent research; individual dot fixtures pending."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.1",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.1",
+    "scope": "Explicit horizontal single/double/triple bonds only",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "GB/T18028-2010 §8.4.2.1; official printed pages59–69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Independent chapter8 visual evidence; bounded implementation, not complete clause/chapter certification."
+    },
+    "fixtureIds": [
+      "gb18028-chemistry-13",
+      "gb18028-chemistry-14",
+      "gb18028-chemistry-15"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.2",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.2",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.3",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.3",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.4",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.4",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.5",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.5",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.6",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.6",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.7",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.7",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.8",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.8",
+    "scope": "结构式使用规则（逐项实现待核验）",
+    "status": "uncovered",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "chapter 8.4; printed pages 59–74",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Clause inventory independently reported from official viewer; exact fixture page locator pending domain task."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-8.4.2.9",
+    "standard": "GB/T18028-2010",
+    "clause": "8.4.2.9",
+    "scope": "结构图线性转写：仅显式坐标水平无环直链子集",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "printed p.73 §8.4.2.9, official viewer page 79; position marker table on printed p.69",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "A separate typed graph API covers only coordinate-checked horizontal acyclic paths. Branches, rings, diagonal/vertical bonds and arbitrary source-graphics inference are rejected; this is not full clause coverage."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-9.1",
+    "standard": "GF0019-2018",
+    "clause": "9.1",
+    "scope": "Initial/final/base-tone spelling",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed p.6 §9.1, PDF page 10, gf-page-10.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-1",
+      "gf-golden-2",
+      "gf-golden-3",
+      "gf-spelling-9-1-negative"
+    ]
+  },
+  {
+    "id": "GF0019-2018-9.2",
+    "standard": "GF0019-2018",
+    "clause": "9.2",
+    "scope": "Consonant-only syllables",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed p.6 §9.2, PDF page 10, gf-page-10.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": ["gf-spelling-9-2-positive", "gf-spelling-9-2-negative"]
+  },
+  {
+    "id": "GF0019-2018-9.3",
+    "standard": "GF0019-2018",
+    "clause": "9.3",
+    "scope": "Vowel-only syllables",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed p.6 §9.3, PDF page 10, gf-page-10.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": ["gf-spelling-9-3-positive", "gf-spelling-9-3-negative"]
+  },
+  {
+    "id": "GF0019-2018-9.4",
+    "standard": "GF0019-2018",
+    "clause": "9.4",
+    "scope": "Special 他/它 spelling",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed p.6 §9.4, PDF page 10, gf-page-10.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": ["gf-spelling-9-4-positive", "gf-spelling-9-4-other-positive", "gf-spelling-9-4-negative"]
+  },
+  {
+    "id": "GF0019-2018-10.1",
+    "standard": "GF0019-2018",
+    "clause": "10.1",
+    "scope": "Base tones without sandhi",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-10.2.1",
+    "standard": "GF0019-2018",
+    "clause": "10.2.1",
+    "scope": "First-tone omission after f",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-4",
+      "gf-golden-5"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.2",
+    "standard": "GF0019-2018",
+    "clause": "10.2.2",
+    "scope": "Second-tone omission and tou exception",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-6",
+      "gf-golden-7"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.3",
+    "standard": "GF0019-2018",
+    "clause": "10.2.3",
+    "scope": "Fourth-tone initial omission with le/zi exceptions",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-8",
+      "gf-golden-9",
+      "gf-golden-10",
+      "gf-golden-21"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.4",
+    "standard": "GF0019-2018",
+    "clause": "10.2.4",
+    "scope": "Fourth-tone vowel-only omission",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed p.8 §10.2.4 and §10.2.5 exception, PDF page 12, gf-page-12.png",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-11",
+      "gf-tone-10-2-4-negative"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.5",
+    "standard": "GF0019-2018",
+    "clause": "10.2.5",
+    "scope": "Specified vowel-only tone exceptions",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-12",
+      "gf-golden-13",
+      "gf-golden-14",
+      "gf-golden-15"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.6",
+    "standard": "GF0019-2018",
+    "clause": "10.2.6",
+    "scope": "o/e tone distinction",
+    "status": "verified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-16",
+      "gf-golden-17"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.7",
+    "standard": "GF0019-2018",
+    "clause": "10.2.7",
+    "scope": "Joined consonant-only + vowel-only exception",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-18",
+      "gf-golden-19"
+    ]
+  },
+  {
+    "id": "GF0019-2018-10.2.8",
+    "standard": "GF0019-2018",
+    "clause": "10.2.8",
+    "scope": "Explicit semantic retention policy; contextual completeness pending",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-20",
+      "gf-golden-22"
+    ]
+  },
+  {
+    "id": "GF0019-2018-11.1",
+    "standard": "GF0019-2018",
+    "clause": "11.1",
+    "scope": "Reading-sensitive contractions",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-23",
+      "gf-golden-24",
+      "gf-golden-25",
+      "gf-golden-26"
+    ]
+  },
+  {
+    "id": "GF0019-2018-11.2",
+    "standard": "GF0019-2018",
+    "clause": "11.2",
+    "scope": "Joined-vowel contraction exceptions",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.6–9",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": [
+      "gf-golden-27"
+    ]
+  },
+  {
+    "id": "GF0019-2018-12.2.1",
+    "standard": "GF0019-2018",
+    "clause": "12.2.1",
+    "scope": "Editable word joining proposals",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.9–12",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-12.2.4",
+    "standard": "GF0019-2018",
+    "clause": "12.2.4",
+    "scope": "Repetition proposals",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.9–12",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GF0019-2018-12.2.5",
+    "standard": "GF0019-2018",
+    "clause": "12.2.5",
+    "scope": "Plural suffix joining subset",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201807/W020180725666187054299.pdf",
+      "locator": "printed pp.9–12",
+      "sourceSha256": "b96dde3c843e50e79c4a372e600baf1ee6f6a52bdfadb51c4e94d751b2e34739",
+      "note": "Independent scanned-standard goldens executed in tests/chinese.test.ts; linguistic proposals are not complete contextual analysis."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-5.1",
+    "standard": "GB/T18028-2010",
+    "clause": "5.1",
+    "scope": "Numbers and independently checked recurring decimals",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 5.1",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-1",
+      "gb18028-math-16",
+      "gb18028-math-21",
+      "layout-L02"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-5.2",
+    "standard": "GB/T18028-2010",
+    "clause": "5.2",
+    "scope": "Latin/Greek letters and explicit Roman-light/italic-light/Roman-bold font scopes; other fonts unverified",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 5.2",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-6",
+      "gb18028-math-7",
+      "gb18028-font-1",
+      "gb18028-font-2",
+      "gb18028-font-3",
+      "gb18028-font-4",
+      "gb18028-font-5",
+      "gb18028-font-6",
+      "gb18028-font-8"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-5.3",
+    "standard": "GB/T18028-2010",
+    "clause": "5.3",
+    "scope": "Quantities, SI unit case, degree/minute notation",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 5.3",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-physics-1",
+      "gb18028-physics-2",
+      "gb18028-physics-3"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-5.4",
+    "standard": "GB/T18028-2010",
+    "clause": "5.4",
+    "scope": "Text marker and mathematical continuation opportunities; layout delegated",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 5.4",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "layout-L01",
+      "layout-L03",
+      "layout-L04",
+      "layout-L05",
+      "layout-L07",
+      "layout-L08"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.1",
+    "standard": "GB/T18028-2010",
+    "clause": "6.1",
+    "scope": "Basic operator symbols and contextual unary spacing",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.1",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-8",
+      "gb18028-math-9",
+      "gb18028-math-10"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.2",
+    "standard": "GB/T18028-2010",
+    "clause": "6.2",
+    "scope": "Inequalities and absolute-value delimiters",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.2",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-11"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.3",
+    "standard": "GB/T18028-2010",
+    "clause": "6.3",
+    "scope": "Brackets and linear cases",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.3",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-6.4",
+    "standard": "GB/T18028-2010",
+    "clause": "6.4",
+    "scope": "Ordinary, simple and framed fractions; multilayer hierarchy unverified",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.4",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-2",
+      "gb18028-math-12",
+      "gb18028-math-13"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.5",
+    "standard": "GB/T18028-2010",
+    "clause": "6.5",
+    "scope": "Right scripts and conservative upper position marks",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.5",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-14",
+      "gb18028-font-7"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.6",
+    "standard": "GB/T18028-2010",
+    "clause": "6.6",
+    "scope": "Integer/general exponents, indexed and nested roots",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.6",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-3",
+      "gb18028-math-4",
+      "gb18028-math-15",
+      "gb18028-math-22"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.7",
+    "standard": "GB/T18028-2010",
+    "clause": "6.7",
+    "scope": "Logarithms and base conventions",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.7",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-6.8",
+    "standard": "GB/T18028-2010",
+    "clause": "6.8",
+    "scope": "Selected geometry and inference symbols",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.8",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-17"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.9",
+    "standard": "GB/T18028-2010",
+    "clause": "6.9",
+    "scope": "Selected trigonometric functions and framed fraction arguments",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.9",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-5"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.12",
+    "standard": "GB/T18028-2010",
+    "clause": "6.12",
+    "scope": "Sums/products and bounded annotations",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.12",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-6.14",
+    "standard": "GB/T18028-2010",
+    "clause": "6.14",
+    "scope": "Selected analysis functions and integral bounds; differential semantics not inferred",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.14",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-18",
+      "gb18028-math-19"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.15",
+    "standard": "GB/T18028-2010",
+    "clause": "6.15",
+    "scope": "Vector position draft with explicit review diagnosis",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.15",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT18028-2010-6.17",
+    "standard": "GB/T18028-2010",
+    "clause": "6.17",
+    "scope": "Rectangular row encoding; block/permutation matrices excluded",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.17",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-20"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-6.18",
+    "standard": "GB/T18028-2010",
+    "clause": "6.18",
+    "scope": "Selected set operators with symbol-specific spacing",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 6.18",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-math-23",
+      "gb18028-set-relations-1",
+      "gb18028-set-relations-2",
+      "gb18028-set-relations-3"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-7.2.1",
+    "standard": "GB/T18028-2010",
+    "clause": "7.2.1",
+    "scope": "Explicit physical-symbol letter types",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 7.2.1",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-physics-5"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-7.2.4",
+    "standard": "GB/T18028-2010",
+    "clause": "7.2.4",
+    "scope": "Explicit unit product separators",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 7.2.4",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-physics-6",
+      "gb18028-physics-7"
+    ]
+  },
+  {
+    "id": "GBT18028-2010-7.2.5",
+    "standard": "GB/T18028-2010",
+    "clause": "7.2.5",
+    "scope": "Explicit unit quotient slash",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=7540BACDF4C6BAB8C9F8618D129D55EB",
+      "locator": "math-standard-evidence.md; cited printed pages and clauses 7.2.5",
+      "sourceSha256": "5cae533a7ee13d82cfcfcbfa52c0ab537d127fdb6997fcddade7620197a18392",
+      "note": "Partial implementation and independently checked short facts only. No whole-clause completeness promotion. Original source/viewer snapshot SHA retained."
+    },
+    "fixtureIds": [
+      "gb18028-physics-4",
+      "gb18028-physics-8"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.5.1",
+    "standard": "GB/T44725-2024",
+    "clause": "4.5.1",
+    "scope": "Explicit heading roles only: centered with at least four leading blanks; higher-level surrounding blank lines",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-4.5.2.1",
+    "standard": "GB/T44725-2024",
+    "clause": "4.5.2.1",
+    "scope": "Bounded text/layout policy from focused evidence 4.5.2.1; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L10"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.5.2.3",
+    "standard": "GB/T44725-2024",
+    "clause": "4.5.2.3",
+    "scope": "Bounded text/layout policy from focused evidence 4.5.2.3; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L11"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.5.3.1",
+    "standard": "GB/T44725-2024",
+    "clause": "4.5.3.1",
+    "scope": "Named book-body profile only; footer labels supplied explicitly, no claim for digit typography",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L15"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.8",
+    "standard": "GB/T44725-2024",
+    "clause": "4.8",
+    "scope": "Bounded text/layout policy from focused evidence 4.8; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-4.8.1",
+    "standard": "GB/T44725-2024",
+    "clause": "4.8.1",
+    "scope": "Bounded text/layout policy from focused evidence 4.8.1; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L12"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.8.2",
+    "standard": "GB/T44725-2024",
+    "clause": "4.8.2",
+    "scope": "Bounded text/layout policy from focused evidence 4.8.2; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L13"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.8.3",
+    "standard": "GB/T44725-2024",
+    "clause": "4.8.3",
+    "scope": "Bounded text/layout policy from focused evidence 4.8.3; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": []
+  },
+  {
+    "id": "GBT44725-2024-4.8.4",
+    "standard": "GB/T44725-2024",
+    "clause": "4.8.4",
+    "scope": "Bounded text/layout policy from focused evidence 4.8.4; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L09"
+    ]
+  },
+  {
+    "id": "GBT44725-2024-4.8.5",
+    "standard": "GB/T44725-2024",
+    "clause": "4.8.5",
+    "scope": "Bounded text/layout policy from focused evidence 4.8.5; no full book/cover/table compliance",
+    "status": "implemented-unverified",
+    "evidence": {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=724E7E79DD866A0D29A2EF7B1F2755B0",
+      "locator": "layout-standard-evidence.md focused supplement; printed pp6–8",
+      "sourceSha256": "3bd2b744531d58d4bf6d03e7267dd87ccee97162c8baaed1e1dfa33626c47373",
+      "note": "Narrow implemented scope; independently constructed short facts do not certify the whole clause."
+    },
+    "fixtureIds": [
+      "layout-L14"
+    ]
+  }
+]
