@@ -456,6 +456,24 @@ export function mountEditor(host: HTMLElement, options: EditorOptions = {}) {
   const nextAlignment = button("下一组", () => { alignmentPage++; render(); });
   comparisonToolbar.append(comparisonPosition, previousAlignment, nextAlignment);
   results.append(comparisonToolbar, comparison);
+  let brailleTarget: {span:SourceSpan;source:string} | undefined;
+  const braillePanel=el('section','','manual-braille-panel');
+  braillePanel.hidden=true;
+  const brailleTitle=el('strong');
+  const brailleDraft=el('textarea');
+  brailleDraft.setAttribute('aria-label','词语盲文原文');
+  brailleDraft.spellcheck=false;
+  const brailleFeedback=el('p');
+  brailleFeedback.setAttribute('role','alert');
+  const closeBraille=()=>{brailleTarget=undefined;braillePanel.hidden=true;};
+  const saveBraille=(reset=false)=>{
+    if(!brailleTarget)return;
+    try { session.setBrailleEdit(brailleTarget.span,reset ? null : brailleDraft.value);closeBraille(); }
+    catch(e) { brailleFeedback.textContent=e instanceof Error ? e.message : '修改失败'; }
+  };
+  braillePanel.append(brailleTitle,el('p','输入六点盲文字符；跨行词整体修改并重新排版。人工修订保留到修改中文原文为止。'),brailleDraft,brailleFeedback,
+    button('插入空方',()=>{brailleDraft.value+='⠀';}),button('保存盲文',()=>saveBraille()),button('恢复自动结果',()=>saveBraille(true)),button('取消',closeBraille));
+  results.append(braillePanel);
   const output = el("textarea");
   output.wrap = "off";
   output.readOnly = true;
@@ -641,8 +659,9 @@ export function mountEditor(host: HTMLElement, options: EditorOptions = {}) {
     error.textContent = session.error;
     resolve.disabled = session.busy || session.onlineBusy || !r;
     cancel.disabled = !session.onlineBusy;
-    output.value = r?.unicode ?? "";
-    brf.value = r?.brf ?? "";
+    output.value = r?.preview?.unicode ?? r?.unicode ?? "";
+    brf.value = r?.preview?.brf ?? r?.brf ?? "";
+    if(r?.preview)state.textContent+=' · 已保留未分页预览，调整排版后导出';
     comparison.replaceChildren();
     const aligned = r ? alignedLines(r) : [];
     const pageCount = Math.max(1, Math.ceil(aligned.length / 10));
@@ -662,7 +681,16 @@ export function mountEditor(host: HTMLElement, options: EditorOptions = {}) {
         tile.setAttribute("aria-label", tile.title);
         tile.append(el("small", unit.continued && unit.source ? `${unit.source}（续）` : unit.source || " "),
           el("span", unit.cells, "aligned-preview-cells"));
-        tile.onclick = () => focusSpan(unit.span);
+        const edited=session.brailleEdits.find(e=>e.start===unit.span.start && e.end===unit.span.end);
+        if(edited)tile.classList.add('braille-edited');
+        tile.onclick = () => {
+          focusSpan(unit.span);
+          if(unit.kind!=='word' || session.busy || session.onlineBusy || session.segmentBusy)return;
+          brailleTarget={span:{...unit.span},source:unit.source};
+          brailleTitle.textContent=`修改「${unit.source}」的盲文`;
+          brailleDraft.value=edited?.cells ?? session.encoded!.atoms.filter(a=>a.kind==='cell' && a.span.start>=unit.span.start && a.span.end<=unit.span.end && a.span.end>a.span.start).map(a=>a.kind==='cell' ? a.cells : '').join('');
+          brailleFeedback.textContent='';braillePanel.hidden=false;brailleDraft.focus();
+        };
         row.append(tile);
       }
       comparison.append(row);
@@ -768,6 +796,7 @@ export function mountEditor(host: HTMLElement, options: EditorOptions = {}) {
   };
   session.onChange = render;
   function setSource(source: string) {
+    closeBraille();
     input.value = source;
     sourceToView = [];
     viewToSource = [0];

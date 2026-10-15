@@ -72,6 +72,7 @@ function semanticOptions(value: unknown): value is SemanticOptions {
       "mode",
       "recognizeMath",
       "recognizeChemistry",
+      "recognizeMarkdownMarkers",
       "timePolicy",
       "overrides",
       "chinese",
@@ -96,7 +97,7 @@ function semanticOptions(value: unknown): value is SemanticOptions {
     return false;
   if (value.strict !== undefined && typeof value.strict !== "boolean")
     return false;
-  for (const name of ["recognizeMath", "recognizeChemistry"])
+  for (const name of ["recognizeMath", "recognizeChemistry", "recognizeMarkdownMarkers"])
     if (value[name] !== undefined && typeof value[name] !== "boolean") return false;
   if (
     value.mode !== undefined &&

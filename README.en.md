@@ -47,6 +47,12 @@ flowchart LR
 
 Embed just the core, or build your own accessibility tools, educational applications and document workflows on the sample editor.
 
+## Synced changes (2026-10-15)
+
+Word-aligned editing now supports manual six-dot braille corrections that survive reflow. LaTeX, aligned mixed prose and Markdown handling are extended. Unsupported inputs retain visible source and review diagnostics; editor failures expose fallback output. Some fonts and characters use readable editorial descriptions rather than newly claimed standard signs.
+
+A replay of 100,000 authentic unique inputs produced 80,160 complete and 19,840 reviewable outputs, with zero exceptions, empty results or source changes. Complete does not imply independently certified accuracy. Only aggregate findings are published. See the [compatibility notes](docs/tex-command-compatibility.md) and [audit report](docs/backend-corpus-audit.md).
+
 ## Quick start
 
 Use Node.js 22.13+ and npm:

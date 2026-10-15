@@ -2,6 +2,7 @@ import { pinyin } from "pinyin-pro";
 import type { Diagnostic, SourceSpan } from "../model";
 import { normalizeManualReading } from "./reading-validation";
 import { checkedChineseLexicon } from "./checked-lexicon";
+import { contextualWordReadings } from "./contextual-readings";
 export interface ChineseSyllable {
   raw: string;
   reading: string;
@@ -156,8 +157,14 @@ export function analyzeChineseDetailed(
     const aligned =
       data.length === chars.length &&
       data.every((entry, i) => entry.raw === chars[i]);
+    const checked = !override && provider === localReadingProvider && aligned
+      ? contextualWordReadings(raw) : undefined;
+    const known = checked?.map(normalizeManualReading);
+    const accepted = known && known.length === chars.length && known.every((reading, i) =>
+      reading && (reading === normalizeManualReading(data[i].reading) ||
+        data[i].candidates.some(candidate => normalizeManualReading(candidate) === reading)));
     chars.forEach((c, i) => {
-      const reading = override?.readings[i] ?? (aligned ? data[i].reading : "");
+      const reading = override?.readings[i] ?? (accepted ? known![i]! : aligned ? data[i].reading : "");
       const syllable: ChineseSyllable = {
         raw: c,
         reading,
@@ -165,6 +172,8 @@ export function analyzeChineseDetailed(
         span: { start: pos, end: pos + c.length },
         source: override ? "manual" : "dictionary",
         retainTone: override?.retainTones?.[i],
+        ...(accepted && data[i].candidates.length > 1
+          ? { resolutionSource: "heuristic" as const } : {}),
       };
       if (!reading || !/^[a-züv:]+[1-5]$/i.test(reading))
         diagnostics.push({
@@ -173,7 +182,7 @@ export function analyzeChineseDetailed(
           span: syllable.span,
           message: `No aligned numbered reading for ${c}.`,
         });
-      else if (!override && syllable.candidates.length > 1)
+      else if (!override && !accepted && syllable.candidates.length > 1)
         diagnostics.push({
           code: "CHINESE_POLYPHONY",
           severity: "warning",
@@ -183,6 +192,11 @@ export function analyzeChineseDetailed(
       syllables.push(syllable);
       pos += c.length;
     });
+    if (accepted && syllables.some(syllable => syllable.resolutionSource === "heuristic"))
+      diagnostics.push({
+        code: "CHINESE_CONTEXT_READING", severity: "info", span: s,
+        message: "Exact complete-word lexical reading accepted; character alternatives remain available for manual review.",
+      });
     words.push({
       kind: "chinese",
       raw,

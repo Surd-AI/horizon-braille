@@ -23,9 +23,10 @@ test("GF0019 informative Annex B keeps circled numbers in lowered position", () 
 test("circled numeral and ordinary numeral retain different encodings", () => {
   expect(encodeText("①").atoms[0].cells).toBe(braille(["3456", "2"]));
   expect(encodeText("1").atoms[0].cells).toBe(braille(["3456", "1"]));
-  // The Annex shows only one-digit encircled examples; never silently turn
-  // unsupported Unicode forms into plain numerals.
+  // Extended circled forms retain the separate mathematical circle frame;
+  // they never normalize to an ordinary numeral or claim an Annex B sign.
   const outsideAnnex = encodeText("⑪");
-  expect(outsideAnnex.complete).toBe(false);
-  expect(outsideAnnex.unhandled.map(item => item.raw)).toContain("⑪");
+  expect(outsideAnnex.complete).toBe(true);
+  expect(outsideAnnex.atoms.map(a=>a.cells).join("")).toBe(braille(["3456","1","1","6","356"]));
+  expect(outsideAnnex.atoms[0].ruleId).toBe("GBT18028-2010-6.5");
 });

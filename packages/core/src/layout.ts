@@ -110,7 +110,7 @@ export function layout(
       atom.kind === "cell" &&
       previous?.kind === "cell" &&
       atom.group === previous.group &&
-      (atom.rowStart || previous.rowEnd || atom.rowSeparator)
+      ((atom.rowStart && !atom.rowStartInline) || previous.rowEnd || atom.rowSeparator)
     )
       fail(
         "layout-conflicting-control",
@@ -118,6 +118,8 @@ export function layout(
         atom.span,
       );
     if (atom.kind === "cell") {
+      if((atom.rowGapBefore && (!atom.rowStart || atom.rowStartInline)) || (atom.rowStartInline && !atom.rowStart))
+        fail('layout-invalid-control','Inline starts and matrix gaps require compatible row-start controls.',atom.span);
       cellCount += atom.cells.length;
       if (
         !isSixDot(atom.cells) ||
@@ -357,7 +359,8 @@ export function layout(
       continue;
     }
     if (atom.rowStart) {
-      flush();
+      if(!atom.rowStartInline)flush();
+      if(atom.rowGapBefore && result.lines.length && result.lines.at(-1)!=='')commit([]);
       paragraph = false;
       rowIndent = atom.continuationIndent ?? 2;
     }

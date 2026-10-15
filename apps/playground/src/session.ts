@@ -1,5 +1,6 @@
 import { collectAmbiguities, validateResolution, resolveAmbiguities, convertWithResolutions } from "../../../packages/core/src/ambiguity";
 import {
+  encodeDocument,
   reflowExistingAtoms,
   type EncodedDocument,
   type UnifiedConversionResult,
@@ -13,6 +14,7 @@ import type {
 } from "../../../packages/core/src/ambiguity";
 import type { PublishingOptions } from "../../../packages/core/src/layout";
 import type { SourceSpan } from "../../../packages/core/src/model";
+import { applyManualBraille, type ManualBrailleEdit } from "../../../packages/core/src/manual-braille";
 import { validWordBoundaries, wordBoundariesCoverWords } from "../../../packages/core/src/language/chinese";
 import { exceedsEditorInputLimit, EDITOR_INPUT_LIMIT_MESSAGE } from '../../shared/input-limits';
 export interface SegmentationReply {
@@ -50,7 +52,7 @@ export async function executeSemanticJob(job: SemanticJob): Promise<SemanticRepl
   }
   // Shared encoder applies provenance, probability and grammar guards again.
   const encoded = convertWithResolutions(source, decisions, options);
-  return { encoded, decisions, ambiguities: collectAmbiguities(encoded) };
+  return { encoded, decisions, ambiguities: collectAmbiguities(encoded, options) };
 }
 export type Execute = (job: SemanticJob) => Promise<SemanticReply>;
 export type Provider = (
@@ -75,6 +77,7 @@ export class EditorSession {
   };
   result?: UnifiedConversionResult;
   encoded?: EncodedDocument;
+  brailleEdits: ManualBrailleEdit[] = [];
   decisions?: DecisionSet;
   ambiguities: Ambiguity[] = [];
   semanticRevision = 0;
@@ -102,6 +105,7 @@ export class EditorSession {
     private segmenter?: SegmenterProvider,
   ) {}
   async setSource(source: string) {
+    if (source !== this.source) this.brailleEdits = [];
     this.source = source;
     this.options = { ...this.options, overrides: [], wordBoundaries: undefined };
     this.segmentStatus = "idle";
@@ -111,7 +115,7 @@ export class EditorSession {
     return this.recompute();
   }
   async setOptions(options: Partial<SemanticOptions>) {
-    const parsingChanged = (["mode", "recognizeMath", "recognizeChemistry"] as const)
+    const parsingChanged = (["mode", "recognizeMath", "recognizeChemistry", "recognizeMarkdownMarkers"] as const)
       .some(k => k in options && options[k] !== this.options[k]);
     this.options = { ...this.options, ...options };
     if (parsingChanged) {
@@ -161,8 +165,22 @@ export class EditorSession {
       if (revision !== this.semanticRevision) return;
       this.accept(response);
     } catch (e) {
-      if (revision === this.semanticRevision)
-        this.error = e instanceof Error ? e.message : "转换失败";
+      if (revision !== this.semanticRevision) return;
+      // A worker/transport failure must not erase otherwise convertible input.
+      try {
+        const response=await executeSemanticJob({source:this.source,options:this.options,decisions:this.decisions});
+        if(revision!==this.semanticRevision)return;
+        response.encoded.diagnostics.push({code:'editor-local-fallback',severity:'info',span:{start:0,end:this.source.length},message:'Background conversion failed; local conversion retained the current input and review items.'});
+        this.accept(response);
+        this.error='后台转换暂不可用，已在本地生成结果；待核对内容仍保留。';
+      } catch {
+        if(revision!==this.semanticRevision)return;
+        const encoded=encodeDocument(this.source,{mode:'text'});
+        encoded.complete=false;
+        encoded.diagnostics.push({code:'editor-source-transcription-fallback',severity:'error',span:{start:0,end:this.source.length},message:'Formula conversion failed; visible literal source transcription retained for correction, not a verified mathematical translation.'});
+        this.accept({encoded,decisions:{documentSource:this.source,resolutions:[]},ambiguities:[]});
+        this.error='公式转换暂未完成，已保留原文的文字转写结果，请核对后修正。';
+      }
     } finally {
       if (revision === this.semanticRevision) {
         this.busy = false;
@@ -176,13 +194,27 @@ export class EditorSession {
     this.encoded = response.encoded;
     this.decisions = response.decisions;
     this.ambiguities = response.ambiguities;
-    this.result = reflowExistingAtoms(this.encoded, this.layout);
+    this.reflow();
+  }
+  setBrailleEdit(span: SourceSpan, cells: string | null) {
+    if (!this.encoded || this.busy || this.onlineBusy || this.segmentBusy) throw new Error('请等待转换完成后修改。');
+    const edits = this.brailleEdits.filter(e => e.start !== span.start || e.end !== span.end);
+    if (cells !== null) edits.push({...span,cells});
+    const result = reflowExistingAtoms(applyManualBraille(this.encoded, edits), this.layout);
+    if (result.diagnostics.some(d=>d.code==='layout-overflow')) throw new Error('修订后的词语超过当前行宽，请增大行宽或缩短盲文后保存。');
+    this.brailleEdits = edits;
+    this.result = result;
+    this.notify();
+  }
+  private reflow() {
+    if (!this.encoded) return;
+    this.result = reflowExistingAtoms(applyManualBraille(this.encoded, this.brailleEdits), this.layout);
   }
   setLayout(options: PublishingOptions) {
     this.layout = { ...this.layout, ...options };
     this.layoutRevision++;
     if (this.encoded)
-      this.result = reflowExistingAtoms(this.encoded, this.layout);
+      this.reflow();
     this.notify();
   }
   async resolveOnline() {

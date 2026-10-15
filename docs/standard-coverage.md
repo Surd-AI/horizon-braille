@@ -17,6 +17,40 @@ There are 40 Chinese/Annex C, 34 math, 8 physics, 33 chemistry, and 15 layout fi
 
 ## Working scope and remaining gaps
 
+Document heading/list/separator markers retain source heading level, exact numbering, bullet glyph and up to three leading indentation spaces through readable captions. Code scope has priority, and unmatched inline code cannot absorb another paragraph or recognized block. Real text/formula offsets and manual word edits remain intact; marker interpretation can be disabled in core/API options. Full container-tree, deep nesting and other Markdown structures remain open work. These are editorial source-marker descriptions, not native GB Markdown layout signs.
+
+Document code blocks/spans preserve verbatim source content with readable boundary captions and exact source spans. Code dollars, underscores and backslashes bypass mathematical interpretation, while neighboring formulas retain their domain conversion. Top-level fences, matching backtick spans, literal line breaks and EOF-terminated fences are covered. Nested-container/indented code and full Markdown structure remain open; the source-transcription profile deliberately preserves whitespace rather than reproducing HTML normalization.
+
+Modified h (`hbar`) retains an explicit lowercase `h` spelling inside its readable glyph caption, including ordinary postfix operand use. Triangle equality, tilde-over-line, explicit bottom and complement commands retain distinct captions in nested and mixed-text fields. They do not substitute numerical constants, ordinary equality or logical evaluation. These editorial descriptions preserve source identity without upgrading the native-standard evidence registry.
+
+Literal `_`, `#`, `&`, backslash, dollar sign and round bullet retain readable Chinese glyph-name descriptions with original spans, including supported escaped punctuation in mathematical text. This covers literal input identity, not Markdown structure or currency inference. Mathematical control syntax and unknown TeX commands remain distinct. Generated descriptions do not enter editable source-word metadata or assert new native punctuation signs.
+
+Floor/ceiling boundaries preserve left/right identity, nested contents, scripts, factorials and negative operands using readable descriptions rather than replacing them with ordinary parentheses or evaluating the rounding. Empty/mismatched/missing named pairs remain diagnosed. Vertical arrows retain six distinct combinations of direction and line style in mathematical fields, with chemistry handled separately. These are editorial symbol descriptions under the documented policy, not new native GB point signs.
+
+Circled plus/cross/dot/minus/slash, mathematical bullet, wedge/inverted wedge and single/double dagger glyphs retain distinct readable Chinese symbol-name descriptions. Equivalent command/Unicode forms retain the same output, and ordinary arithmetic, transpose, logical evaluation and adjoint interpretation are not inferred from the glyph alone. Nested fields and original source words remain available for proofreading. These editorial descriptions are separately counted in the corpus and do not upgrade native-standard evidence status.
+
+Checked-base labeled-arrow commands preserve separate upper/lower fields with source-bound word editing. Explicit domains accept a sole complete formula wrapper without rewriting the source, and empty wrapped expressions retain a visible error. Mapping ambiguity collection follows whole-source, nested and aligned-row scopes consistently with rendering. Other labeled-arrow base glyph families remain to be developed.
+
+Conventional superscript `top/⊤` has a scoped transpose adapter to §6.17; ordinary `T`, bare logical `top` and dagger notation remain distinct. Explicit `Tr/SP` trace spellings, supported-font vector names, grouped indexed vector names and the exact zero-vector form are handled without erasing source spelling or source spans. See [normalization scope](tex-command-compatibility.md).
+
+Set-relation adapters cover the §6.18 negative inclusion, double inclusion, ordering and mapping glyphs, plus explicit negation of equality/membership/inclusion/existence. Equivalent command and Unicode spellings share cells and spacing. The bounded single-letter mapping-colon syntax includes the arrows illustrated in §6.18.2 example 8. Explicit math mode is preserved through ambiguity collection and decisions; arbitrary negation targets remain diagnosed.
+
+Mathematical integer/decimal digits, numeric indices/limits and compact numeric fractions now have exact-cell continuation opportunities under §5.4.2.2. The number/sign prefix stays with the first digit, a decimal point stays with its adjacent digits, and upper/lower digit forms remain distinct. Root indices can continue independently of the radicand while both framing transitions remain protected. No numeric rounding or scientific-notation substitution is performed.
+
+Long mathematical scripts, large-operator limits and composite accent bodies can continue at existing §5.4.2.2 semantic boundaries. Their leading directions/group brackets and complete ending marks remain attached to payload units. Narrow-versus-wide fixtures verify identical encoded atoms; this does not make arbitrary long numbers or deeply accumulated framing splittable.
+
+Explicit equation `tag/tag*` identifiers are preserved after their semantic row under the documented linear layout policy. Parentheses, source offsets, row association and manual word edits are retained; invalid or structurally misplaced tags remain diagnosed. This does not implement automatic LaTeX equation counters or cross-reference resolution.
+
+Standard TeX binomial coefficients normalize to the §6.10 combination notation with total below and selection above; outside powers retain complete-coefficient scope. Six standard named operator commands use the full Latin spelling rule in §6.16.2.2, and `iff/implies` reuse existing arrows. Additional delimiter-size commands retain their delimiter payload in math mode. See [command compatibility policy](tex-command-compatibility.md).
+
+Direct core conversion and the local resolver share bounded complete-word Chinese readings, including the existing standard examples and explicitly sourced editorial entries. Character candidates remain available and manual decisions take priority. Unknown words, isolated polyphonic characters and custom provider proposals remain subject to review; this does not implement general sentence disambiguation. See [contextual reading provenance](contextual-chinese-readings.md).
+
+Additional OCR spellings include postfix factorial (§6.10), `dots` and Unicode ellipsis with checked punctuation spacing (§5.4), long/single-glyph equivalents of the existing implication and right arrows, and inverse cotangent/secant/cosecant (§6.9). A missing factorial operand remains diagnosed; a closing magnitude/cardinality bar may supply that operand. These additions do not upgrade the rule registry to full standards support.
+
+General `overset`, `underset`, `stackrel`, and left/bidirectional/below-arrow annotations preserve body scope and direction under §§5.4.2.3 and 6.5. Multiple distinct position marks retain separate endings. Mathematical expressions in a label keep ordinary arithmetic rules; position-glyph overrides apply only to actual mark glyphs. Position-only arrows are not silently reused as unclassified standalone operators. Unresolved content is rendered within its semantic field, with original source spans retained.
+
+
+
 | Area | Working scope | Limits that remain visible |
 |---|---|---|
 | Mixed document | Chinese, bare fraction/root/scripts, Unicode Greek symbols, infix operators and scripts, typed math/chemistry islands, `$...$`, `$$...$$`, `\(...\)`, `\[...\]`, CRLF and blank-paragraph recovery, exact UTF-16 spans | Bounded recognition, not arbitrary TeX; weak ambiguous syntax and unknown macros remain diagnosed; literal dollars need `\$`; paths retain source but may have unsupported characters |

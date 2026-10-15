@@ -1,0 +1,20 @@
+import {test,expect} from 'vitest';
+import {convert,encodeDocument} from '../packages/core/src/convert';
+import {parseMath} from '../packages/core/src/parser/math';
+import {applyManualBraille} from '../packages/core/src/manual-braille';
+import {braille} from '../packages/core/src/rules/math-symbols';
+const options={mode:'math' as const,paragraphIndent:0};
+test.each(['phantom','hphantom','vphantom'])('%s preserves hidden scope, parsed fraction and exact spans',name=>{
+ const source=`\\${name}{\\frac{1}{2}}`,r=convert(source,options);expect(r.complete).toBe(true);expect(r.document.source).toBe(source);expect(r.diagnostics.some(d=>d.code==='math-phantom-layout-described')).toBe(true);
+ expect(r.atoms.some(a=>a.kind==='cell'&&a.cells===braille(['23']))).toBe(true);expect(r.unicode).not.toBe(convert(String.raw`\frac{1}{2}`,options).unicode);
+ expect(r.atoms.every(a=>a.span.start>=0&&a.span.end<=source.length)).toBe(true);
+});
+test('horizontal, vertical and full dimensions remain distinct',()=>{expect(new Set(['phantom','hphantom','vphantom'].map(n=>convert(`\\${n}{x}`,options).unicode)).size).toBe(3);});
+test.each([String.raw`\phantom x`,String.raw`x+\phantom{y}=1`,String.raw`\frac{\hphantom{x}}{y}`,String.raw`\phantom{\mathbf{x}}^2`,String.raw`\mathbb{\phantom{x}}`,String.raw`\phantom{\vphantom{x}}`,String.raw`\begin{aligned}\text{因为}&x+\phantom{y}=1\\\text{所以}&x=2\end{aligned}`])('nested layout and neighboring content remain visible %s',source=>{const r=convert(source,options);expect(r.complete).toBe(true);expect(r.document.source).toBe(source);expect(r.unicode||r.preview?.unicode).toBeTruthy();});
+test.each([String.raw`\text{a\phantom{some text}b}`,String.raw`\textbf{a\hphantom{some text}b}`,String.raw`\begin{tabular}{l}a\vphantom{some text}b\end{tabular}`])('prose layout preserves the original spaces %s',source=>{const r=convert(source,options);expect(r.complete).toBe(true);expect(r.document.source).toBe(source);const start=source.indexOf('some text');expect(r.atoms.some(a=>a.kind==='cell'&&a.cells==='⠀'&&a.span.start===start+4&&a.span.end===start+5)).toBe(true);});
+test.each([String.raw`\phantom{}`,String.raw`\hphantom{ }`,String.raw`\text{a\vphantom{}b}`])('empty layout bodies retain an explicit empty-content caption %s',source=>{const r=convert(source,options);expect(r.complete).toBe(true);expect(r.atoms.some(a=>a.ruleId==='editorial-phantom-empty-content')).toBe(true);expect(r.document.source).toBe(source);});
+test.each([String.raw`\phantom`,String.raw`\phantom{\unknown{x}}`,String.raw`\hphantom{\quad}`,String.raw`\vphantom{\frac{}{2}}`,String.raw`\phantom{x`,String.raw`\phantomunknown{x}`])('invalid or unverified layouts retain source and output %s',source=>{const r=convert(source,options);expect(r.complete).toBe(false);expect(r.document.source).toBe(source);expect(r.unicode||r.preview?.unicode).toBeTruthy();});
+test('strict symbol policy retains a visibly reviewable phantom description',()=>{const r=convert(String.raw`\phantom{x}`,{...options,symbolPolicy:'review-unmapped'});expect(r.complete).toBe(false);expect(r.unicode||r.preview?.unicode).toBeTruthy();});
+test.each([String.raw`\phantom{x}`,String.raw`\text{a\hphantom{some text}b}`])('document detects layout controls %s',source=>{const r=convert(source,{mode:'document',paragraphIndent:0});expect(r.complete).toBe(true);expect(r.document.nodes.some(n=>n.kind==='bare-math')).toBe(true);});
+test('source word edits cannot replace the layout caption',()=>{const source=String.raw`\phantom{\text{因为}}+x`,start=source.indexOf('因为'),r=encodeDocument(source,options),e=applyManualBraille(r,[{start,end:start+2,cells:'⠁⠃'}]);expect(r.complete).toBe(true);expect(e.atoms.filter(a=>a.ruleId==='editorial-phantom-layout')).toEqual(r.atoms.filter(a=>a.ruleId==='editorial-phantom-layout'));});
+test('resource limits keep nested layouts bounded and visible',()=>{const source=String.raw`\phantom{\phantom{\phantom{x}}}`,r=parseMath(source,{start:0,end:source.length},{maxDepth:2});expect(r.diagnostics.some(d=>d.code==='math-depth-limit')).toBe(true);});

@@ -9,12 +9,12 @@ export function createSession(options: SessionClientOptions = {}) {
   let serial = 0;
   const pending = new Map<
     number,
-    { resolve: (r: SemanticReply) => void; reject: (e: Error) => void }
+    { resolve: (r: SemanticReply) => void; reject: (e: Error) => void;timer:ReturnType<typeof setTimeout> }
   >();
-  const cancel = () => {
+  const cancel = (reason='已取消旧任务') => {
     worker?.terminate();
     worker = undefined;
-    for (const p of pending.values()) p.reject(new Error("已取消旧任务"));
+    for (const p of pending.values()){clearTimeout(p.timer);p.reject(new Error(reason));}
     pending.clear();
   };
   const execute = (job: SemanticJob) =>
@@ -24,21 +24,19 @@ export function createSession(options: SessionClientOptions = {}) {
         worker.onmessage = ({ data }) => {
           const p = pending.get(data.id);
           if (p) {
+            clearTimeout(p.timer);
             pending.delete(data.id);
             data.error
               ? p.reject(new Error(data.error))
               : p.resolve(data.reply);
           }
         };
-        worker.onerror = () => {
-          for (const p of pending.values())
-            p.reject(new Error("Worker 加载失败"));
-          pending.clear();
-        };
+        worker.onerror = () => cancel('后台转换无法加载');
       }
       const id = ++serial;
-      pending.set(id, { resolve, reject });
-      worker.postMessage({ id, job });
+      const timer=setTimeout(()=>cancel('后台转换超时'),15000);
+      pending.set(id, { resolve, reject,timer });
+      try{worker.postMessage({ id, job });}catch{cancel('后台转换无法启动');}
     });
   return new EditorSession(
     execute,

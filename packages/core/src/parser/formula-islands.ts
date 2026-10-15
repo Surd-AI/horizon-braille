@@ -1,12 +1,28 @@
+import {horizontalSpaceAt} from './tex-spacing';
 import {
   FUNCTIONS,
+  SYMBOL_COMMAND_ALIASES,
+  FONT_SIZE_NAMES,
+  CONTEXTUAL_SYMBOLS,
+  LABELED_ARROW_COMMANDS,
+  NAMED_FUNCTION_COMMANDS,
   GREEK_COMMANDS,
   SYMBOLS,
+  DESCRIBED_SYMBOLS,
+  DESCRIBED_SYMBOL_ALIASES,
+  BAR_DELIMITERS,
   SYMBOL_ALIASES,
   UNICODE_SUPERSCRIPT_DIGITS,
   UNICODE_SUBSCRIPT_DIGITS,
 } from "../rules/math-symbols";
-import { STYLES, ENVIRONMENTS } from "./math";
+import { STYLES, FONT_DECLARATIONS, ENVIRONMENTS, negatedRelationAt } from "./math";
+import {latinDiacritics} from '../rules/latin-diacritics';
+import {CYRILLIC_LETTER_NAMES} from '../rules/cyrillic-letter-names';
+import {LATIN_LETTER_NAMES} from '../rules/latin-letter-names';
+import {ARABIC_CHARACTER_NAMES} from '../rules/arabic-character-names';
+import {DEVANAGARI_CHARACTER_NAMES} from '../rules/devanagari-character-names';
+import {PHANTOM_LAYOUTS} from '../rules/phantom-layouts';
+import {MATHEMATICAL_LETTERS} from '../rules/math-alphabet';
 
 export interface Island {
   end: number;
@@ -16,7 +32,7 @@ export interface Island {
   diagnosticEnd?: number;
 }
 // Roles of names already present in SYMBOLS; no new commands or point tables.
-const CONSTANTS = new Set(["infty", "emptyset", "varnothing", "aleph"]);
+const CONSTANTS = new Set(["infty", "emptyset", "empty", "varnothing", "aleph"]);
 const GREEK_GLYPHS = new Set(Object.values(GREEK_COMMANDS));
 const INFIX = new Set([
   "pm",
@@ -35,14 +51,20 @@ const INFIX = new Set([
   "le",
   "leq",
   "leqslant",
+  'ngtr','nless','gtrless','lessgtr','gg','ll',
+  'gt','lt',
+  'models','vDash','Vdash','Vvdash','nvdash','nvDash','nVdash','nVDash','nleq','ngeq','nmid','nparallel',
   "to",
   "rightarrow",
+  "longrightarrow",
   "parallel",
   "perp",
   "cong",
   "sim",
   "Leftrightarrow",
   "Rightarrow",
+  "Longrightarrow","Longleftrightarrow",
+  "iff", "implies",
   "in",
   "notin",
   "subset",
@@ -52,6 +74,9 @@ const INFIX = new Set([
   "cup",
   "cap",
   "setminus",
+  "backslash", "isin", "notsubset", "notsupset", "Subset", "Supset",
+  "prec", "succ", "preceq", "succeq", "preccurlyeq", "succcurlyeq",
+  "mapsto", "longmapsto", "leftrightarrow", "longleftrightarrow",
 ]);
 const unicodeScriptEnd = (source: string, at: number): number => {
   const digits = Object.hasOwn(UNICODE_SUPERSCRIPT_DIGITS, source[at] ?? "")
@@ -72,7 +97,15 @@ export function formulaScanner(source: string) {
   const paragraphEnds = new Uint32Array(source.length + 1);
   const envCloses = new Map<number, number>();
   const envStack: { name: string; start: number }[] = [];
+  const sizedCloses=new Map<number,number>();
+  const sizedStack:number[]=[];
+  const barCloses=new Map<number,number>();
+  const barStack:{width:1|2;start:number}[]=[];
   const paragraphs = new Set<number>();
+  // Closed prose-capable TeX tables can contain paragraph breaks. Keep a
+  // separate matched index; unclosed starts cannot consume later paragraphs.
+  const proseEnvStack:{name:string;start:number}[]=[];
+  const proseEnvCloses=new Map<number,number>();
   for (const m of source.matchAll(
     /(?:\r\n|\r(?!\n)|(?<!\r)\n)[ \t]*(?:\r\n|\r|\n)/g,
   ))
@@ -86,16 +119,40 @@ export function formulaScanner(source: string) {
     if (paragraphs.has(i)) {
       stack.length = 0;
       envStack.length = 0;
+      sizedStack.length=0;
+      barStack.length=0;
     }
     const c = source[i];
     if (c === "\\") {
-      const m = /^\\(begin|end)\{([A-Za-z]+)\}/.exec(source.slice(i, i + 64));
+      const sized=/^\\(left|right|(?:big|Big)g?[lr])\s*(\\(?:lbrace|rbrace|langle|rangle|lvert|rvert|lVert|rVert|vert|Vert|lfloor|rfloor|lceil|rceil|[{}|])|[()[\]|.⌊⌋⌈⌉])/.exec(source.slice(i,i+64));
+      if(sized) {
+        if(sized[1]==='left' || sized[1].endsWith('l'))sizedStack.push(i);
+        else if(sizedStack.length)sizedCloses.set(sizedStack.pop()!,i+sized[0].length);
+        i+=sized[0].length-1;
+        continue;
+      }
+      const barCommand=/^\\(?:(lvert|rvert|lVert|rVert|vert|Vert)(?![A-Za-z])|(\|))/.exec(source.slice(i,i+16));
+      if(barCommand) {
+        const bar=BAR_DELIMITERS[barCommand[1] ?? 'Vert'];
+        if(bar.side!=='left' && barStack.at(-1)?.width===bar.width)barCloses.set(barStack.pop()!.start,i+barCommand[0].length);
+        else if(bar.side!=='right')barStack.push({width:bar.width,start:i});
+        i+=barCommand[0].length-1;continue;
+      }
+      const m = /^\\(begin|end)\{([A-Za-z]+\*?)\}/.exec(source.slice(i, i + 64));
       if (m) {
+        if(m[1]==='begin')proseEnvStack.push({name:m[2],start:i});
+        else if(proseEnvStack.at(-1)?.name===m[2]) {
+          const opening=proseEnvStack.pop()!;
+          if(['array','tabular'].includes(opening.name))proseEnvCloses.set(opening.start,i+m[0].length);
+        }
         if (m[1] === "begin") envStack.push({ name: m[2], start: i });
         else if (envStack.at(-1)?.name === m[2])
           envCloses.set(envStack.pop()!.start, i + m[0].length);
         i += m[0].length - 1;
       } else i++;
+    } else if(c==='‖') {
+      if(barStack.at(-1)?.width===2)barCloses.set(barStack.pop()!.start,i+1);
+      else barStack.push({width:2,start:i});
     } else if (c === "{" || c === "[" || c === "(") stack.push(i);
     else if (c === "}" || c === "]" || c === ")") {
       // Literal text may contain unmatched parentheses; they cannot hide a TeX brace close.
@@ -111,19 +168,34 @@ export function formulaScanner(source: string) {
       }
     }
   }
+  const breakHint=/\\(?:nobreak|allowbreak)(?![A-Za-z])/y;
   const ws = (i: number) => {
-    while (source[i] === " " || source[i] === "\t") i++;
+    for(;;){
+      if(source[i]===' '||source[i]==='\t'){i++;continue;}
+      if(source[i]==='\\'){
+        breakHint.lastIndex=i;const hint=breakHint.exec(source);
+        if(hint){i=breakHint.lastIndex;continue;}
+      }
+      break;
+    }
     return i;
   };
   const accents = new Set([
+    'acute','grave','mathring',
     "dot",
     "ddot",
     "overline",
     "bar",
     "vec",
     "hat",
+    "widehat",
+    'check','breve','overparen','underparen',
+    "tilde",
+    "widetilde",
     "underline",
     "overrightarrow",
+    'underbrace','overbrace','underbracket','overbracket',
+    'overleftarrow','overleftrightarrow','underleftarrow','underrightarrow','underleftrightarrow',
   ]);
   type Atom = {
     end: number;
@@ -139,7 +211,13 @@ export function formulaScanner(source: string) {
   const atom = (start: number, depth = 0, single = false): Atom | undefined => {
     if (depth > 64) return;
     let i = start;
+    if(source[i]==='\\'){breakHint.lastIndex=i;if(breakHint.exec(source))i=ws(breakHint.lastIndex);}
     const c = source[i];
+    if(Object.hasOwn(DESCRIBED_SYMBOL_ALIASES,c ?? '') || c==='∃' || c==='∄')return {end:i+1,strong:true};
+    const mathematicalGlyph=String.fromCodePoint(source.codePointAt(i) ?? 0);
+    if(Object.hasOwn(MATHEMATICAL_LETTERS,mathematicalGlyph))return {end:i+mathematicalGlyph.length,strong:true};
+    if(c==='‖' && barCloses.has(i))return {end:barCloses.get(i)!,strong:true};
+    if(c==='⊤')return {end:i+1,strong:false};
     if ("{[(".includes(c ?? "\0")) {
       const end = closes.get(i);
       if (end === undefined) return;
@@ -188,6 +266,7 @@ export function formulaScanner(source: string) {
         hasOperand = true;
         pending = false;
         j = ws(item.end);
+        while(source[j]==='!' && source[j+1]!=='='){j=ws(j+1);strong=true;}
         while (unicodeScriptEnd(source, j) > j) {
           j = ws(unicodeScriptEnd(source, j));
           strong = true;
@@ -227,24 +306,80 @@ export function formulaScanner(source: string) {
         infix: INFIX.has(SYMBOL_ALIASES[c]),
       };
     if (c !== "\\") return;
+    if(barCloses.has(i))return {end:barCloses.get(i)!,strong:true};
     const m = /^\\([A-Za-z]+)/.exec(source.slice(i, i + 128));
     if (!m) return;
     const name = m[1];
     i = ws(i + m[0].length);
+    if(Object.hasOwn(DESCRIBED_SYMBOLS,name) || ['exists','exist','nexists'].includes(name))return {end:start+m[0].length,strong:true};
+    if(Object.hasOwn(SYMBOL_COMMAND_ALIASES,name))return {end:start+m[0].length,strong:true};
+    if(CONTEXTUAL_SYMBOLS.has(name))return {end:start+m[0].length,strong:false};
+    if(name==='not') {
+      const relation=negatedRelationAt(source,i,false);
+      if(relation)return {end:relation.end,strong:false,contextual:true,infix:true};
+      return;
+    }
+    if(name==='left' || /^(?:big|Big)g?l$/.test(name)) {
+      const end=sizedCloses.get(start);
+      if(end)return {end,strong:true};
+      return;
+    }
+    if(name==='operatorname') {
+      if(source[i]==='*')i=ws(i+1);
+      if(source[i]!=='{')return;
+      const end=closes.get(i);
+      if(end)return {end,strong:true};
+      return;
+    }
+    if(name==='hspace') {
+      const distance=horizontalSpaceAt(source,i);
+      if(distance)return {end:distance.end,strong:true};
+      return;
+    }
+    if(Object.hasOwn(FONT_SIZE_NAMES,name)||Object.hasOwn(FONT_DECLARATIONS,name))return {end:i,strong:true};
+    if(name==='color') {
+      if(source[i]==='{'){
+        const end=closes.get(i);
+        if(end){const body=atom(ws(end),depth+1,true);return {end:body && !body.chemical?body.end:end,strong:true};}
+      }
+      return;
+    }
+    if(name==='eqno') {
+      if(source[i]==='{'){const end=closes.get(i);if(end)return {end,strong:true};}
+      return {end:i,strong:true};
+    }
+    if (name==='tag') {
+      if (source[i]==='*') i=ws(i+1);
+      if (source[i]!=='{') return;
+      const end=closes.get(i);
+      if(end)return {end,strong:true};
+      return;
+    }
+    if(Object.hasOwn(LABELED_ARROW_COMMANDS,name)) {
+      if(source[i]==='['){const lowerEnd=closes.get(i);if(!lowerEnd)return;i=ws(lowerEnd);}
+      const label=atom(i,depth+1,true);
+      if(!label || label.recoveryEnd!==undefined)return;
+      const end=label.end,operand=atom(ws(end),depth+1);
+      return {end:operand && !operand.contextual && !operand.invalid && operand.recoveryEnd===undefined?operand.end:end,strong:true};
+    }
     if (name === "begin") {
-      const env = /^\{([A-Za-z]+)\}/.exec(source.slice(i, i + 64));
-      const end = envCloses.get(start);
+      const env = /^\{([A-Za-z]+\*?)\}/.exec(source.slice(i, i + 64));
+      const end = envCloses.get(start) ?? proseEnvCloses.get(start);
       if (env && ENVIRONMENTS.has(env[1]) && end) return { end, strong: true };
       return;
     }
-    const fraction = ["frac", "dfrac", "tfrac"].includes(name);
+    const fraction = ["frac", "dfrac", "tfrac", "binom", "dbinom", "tbinom",'overset','underset','stackrel','textcolor'].includes(name);
     if (
       fraction ||
       name === "sqrt" ||
       name === "ce" ||
       name === "text" ||
       name === "mbox" ||
-      STYLES.has(name) ||
+      name === "textcircled" ||
+      name === "boxed" ||
+      name === 'substack' ||
+      name === 'pmod' || name === 'pod' ||
+      STYLES.has(name) || Object.hasOwn(PHANTOM_LAYOUTS,name) ||
       accents.has(name)
     ) {
       if (name === "sqrt" && source[i] === "[") {
@@ -252,6 +387,7 @@ export function formulaScanner(source: string) {
         if (!end) return;
         i = ws(end);
       }
+      const argumentStart=i;
       for (let n = 0; n < (fraction ? 2 : 1); n++) {
         if (["ce", "text", "mbox"].includes(name) && source[i] !== "{") return;
         const argument = atom(i, depth + 1, true);
@@ -259,13 +395,27 @@ export function formulaScanner(source: string) {
         i = argument.end;
         if (n === 0 && fraction) i = ws(i);
       }
+      let literalControl=false;
+      if(['text','mbox'].includes(name)) {
+        literalControl=[...source.slice(argumentStart+1,i-1)].some(c=>!!latinDiacritics(c)||Object.hasOwn(CYRILLIC_LETTER_NAMES,c)||Object.hasOwn(LATIN_LETTER_NAMES,c)||Object.hasOwn(ARABIC_CHARACTER_NAMES,c)||Object.hasOwn(DEVANAGARI_CHARACTER_NAMES,c));
+        for(let at=argumentStart+1;at<i-1;at++) {
+          if(source[at]!=='\\')continue;
+          if('%{}$#_&'.includes(source[at+1] ?? '\0')) {literalControl=true;break;}
+          if(/^\\(?:phantom|hphantom|vphantom)(?![A-Za-z])\s*\{/.test(source.slice(at,i))){literalControl=true;break;}
+          if(source.startsWith('\\textcircled',at) && !/[A-Za-z]/.test(source[at+12] ?? '')) {
+            let group=at+12;while(group<i && /\s/.test(source[group]))group++;
+            if(source[group]==='{'){literalControl=true;break;}
+          }
+          at++;
+        }
+      }
       return {
         end: i,
-        strong: !["text", "mbox"].includes(name),
+        strong: !["text", "mbox"].includes(name) || literalControl,
         chemical: name === "ce",
       };
     }
-    if (Object.hasOwn(FUNCTIONS, name)) {
+    if (Object.hasOwn(FUNCTIONS, name) || NAMED_FUNCTION_COMMANDS.has(name)) {
       while (source[i] === "^" || source[i] === "_") {
         const script = atom(ws(i + 1), depth + 1, true);
         if (!script) return;
@@ -275,6 +425,7 @@ export function formulaScanner(source: string) {
       if (!operand || operand.recoveryEnd !== undefined) return;
       return { end: operand.end, strong: true };
     }
+    if(['ell','imath','jmath'].includes(name))return {end:start+m[0].length,strong:true};
     if (Object.hasOwn(GREEK_COMMANDS, name))
       return { end: start + m[0].length, strong: true };
     if (Object.hasOwn(SYMBOLS, name))
@@ -304,15 +455,21 @@ export function formulaScanner(source: string) {
           "frac",
           "dfrac",
           "tfrac",
+          "binom", "dbinom", "tbinom",
           "sqrt",
           "ce",
           "begin",
           "text",
           "mbox",
+          "left",
+          "bigl", "Bigl", "biggl", "Biggl",
+          "operatorname",
+          "nobreak", "allowbreak",
+          "tag",
         ].includes(name) ||
-        STYLES.has(name) ||
+        STYLES.has(name) || Object.hasOwn(PHANTOM_LAYOUTS,name) ||
         accents.has(name) ||
-        Object.hasOwn(FUNCTIONS, name);
+        Object.hasOwn(FUNCTIONS, name) || NAMED_FUNCTION_COMMANDS.has(name);
       return {
         end: start + command[0].length,
         code: known ? "bare-incomplete-formula" : "bare-unknown-command",
@@ -333,6 +490,7 @@ export function formulaScanner(source: string) {
     if (first.chemical) return { end, kind: "chemistry" };
     for (;;) {
       let i = ws(end);
+      if(i===end && source[i]==='!' && source[i+1]!=='=') {end=i+1;strong=true;continue;}
       const unicodeEnd = unicodeScriptEnd(source, i);
       if (unicodeEnd > i) {
         end = unicodeEnd;
@@ -373,7 +531,7 @@ export function formulaScanner(source: string) {
         continue;
       }
       // Unicode operators use the same known infix rules as their TeX names.
-      if (source[i] !== "·" && INFIX.has(SYMBOL_ALIASES[source[i]])) {
+      if (source[i] !== "·" && INFIX.has(SYMBOL_ALIASES[source[i]] ?? DESCRIBED_SYMBOL_ALIASES[source[i]])) {
         const right = atom(ws(i + 1));
         if (right && !right.chemical && !right.contextual && !right.invalid) {
           end = right.end;
@@ -388,8 +546,9 @@ export function formulaScanner(source: string) {
       // Known infix commands require a following operand, never just a name prefix.
       if (source[i] === "\\") {
         const command = /^\\([A-Za-z]+)/.exec(source.slice(i));
-        if (command && INFIX.has(command[1])) {
-          const right = atom(ws(i + command[0].length));
+        const negation=command?.[1]==='not' ? negatedRelationAt(source,i+command[0].length,false):undefined;
+        if (command && (INFIX.has(command[1]) || negation)) {
+          const right = atom(ws(negation?.end ?? i + command[0].length));
           if (right && !right.chemical && !right.contextual && !right.invalid) {
             end = right.end;
             strong = true;

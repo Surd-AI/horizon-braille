@@ -806,7 +806,9 @@ it('accepts strict independent domain flags and rejects invalid manual phonotact
   const valid=await localRequest(server.port,'/resolve',headers,JSON.stringify({source,options:{recognizeMath:false,recognizeChemistry:true},external:false}));
   expect(valid.status).toBe(200);expect(valid.body.encoded.document.nodes.some((n:any)=>n.kind==='chemistry')).toBe(true);
   expect(valid.body.encoded.document.nodes.some((n:any)=>n.kind==='bare-math')).toBe(false);
-  for(const flag of ['recognizeMath','recognizeChemistry'])expect((await localRequest(server.port,'/resolve',headers,JSON.stringify({source,options:{[flag]:'false'},external:false}))).status).toBe(400);
+  for(const flag of ['recognizeMath','recognizeChemistry','recognizeMarkdownMarkers'])expect((await localRequest(server.port,'/resolve',headers,JSON.stringify({source,options:{[flag]:'false'},external:false}))).status).toBe(400);
+  const literalMarkers=await localRequest(server.port,'/resolve',headers,JSON.stringify({source:'# abc',options:{recognizeMarkdownMarkers:false},external:false}));
+  expect(literalMarkers.status).toBe(200);expect(literalMarkers.body.encoded.document.nodes.some((n:any)=>n.kind==='markdown-marker')).toBe(false);
   for(const reading of ['fiong2','küe3','xi1 an1'])expect((await localRequest(server.port,'/resolve',headers,JSON.stringify({source:'西',options:{overrides:[{start:0,end:1,readings:[reading]}]},external:false}))).status).toBe(400);
  } finally {await server.close();}
 });

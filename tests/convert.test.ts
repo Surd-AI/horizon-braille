@@ -36,7 +36,7 @@ it("routes Chinese, numbers and Latin in original text order and retains analysi
   );
 });
 it("preserves unknown and escaped source with visible errors and placeholders", () => {
-  for (const s of ["😀", "\\$", "$\\unknown{x}$"]) {
+  for (const s of ["😀", "$\\unknown{x}$"]) {
     const r = convert(s, options);
     expect(r.complete).toBe(false);
     expect(r.unhandled.length).toBeGreaterThan(0);
@@ -238,7 +238,7 @@ it("escaped tokens, CRLF and supplementary scalars retain original UTF16 source 
   const r = convert("\\$27\r\n😀", options);
   expect(
     r.atoms.find((a) => a.ruleId === "unhandled-placeholder")?.span,
-  ).toEqual({ start: 0, end: 2 });
+  ).toEqual({ start: 6, end: 8 });
   expect(
     r.atoms.find(
       (a) => a.kind === "cell" && a.cells === b(["3456", "12", "1245"]),
@@ -276,15 +276,13 @@ it("display boundaries do not manufacture trailing or duplicate source blank lin
     b(["1345"]),
   ]);
 });
-it("does not claim multi-matrix page composition is complete", () => {
+it("separates successive matrices with the section 6.17.2.6 blank line", () => {
   const r = convert(
     "$\\begin{pmatrix}a\\end{pmatrix}+\\begin{pmatrix}b\\end{pmatrix}$",
     options,
   );
-  expect(r.complete).toBe(false);
-  expect(
-    r.diagnostics.some((d) => d.code === "math-matrix-composition-unverified"),
-  ).toBe(true);
+  expect(r.complete).toBe(true);
+  expect(r.lines).toEqual([b(['126','56','1','345','0','235']),'',b(['126','56','12','345'])]);
 });
 it("keeps a supported matrix exponent after the last row without merging atomic groups across rows", () => {
   const r = convert("$\\begin{pmatrix}a\\\\b\\end{pmatrix}^2$", options);

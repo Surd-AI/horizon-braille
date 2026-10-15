@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "engineSha256": "ff11e9725a1b1188250409b3f7f1182d902fc692f3bad2127742e380e50bf898",
+  "tests": {
+    "passed": 3913,
+    "todo": 13,
+    "files": 139
+  },
+  "inputs": 100000,
+  "complete": 80160,
+  "partial": 19840,
+  "byFormat": {
+    "latex": {
+      "samples": 81148,
+      "complete": 76447,
+      "partial": 4701
+    },
+    "markdown": {
+      "samples": 18852,
+      "complete": 3713,
+      "partial": 15139
+    }
+  },
+  "preservation": {
+    "exceptions": 0,
+    "empty": 0,
+    "sourceChanged": 0,
+    "invalidDocumentSpans": 0,
+    "invalidAtomSpans": 0,
+    "invalidDiagnosticSpans": 0,
+    "invalidUnhandledSpans": 0,
+    "previewTruncated": 0
+  },
+  "baselineDelta": {
+    "newlyComplete": 0,
+    "newlyPartial": 0
+  }
+}

@@ -33,7 +33,7 @@ export function encodePhysics(
       n.kind === "group" ||
       n.kind === "style" ||
       n.kind === "root" ||
-      n.kind === "accent"
+      n.kind === "accent" || n.kind==='annotation'
     )
       return { ...n, body: unit(n.body) };
     if (n.kind === "fraction")

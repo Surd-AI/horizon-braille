@@ -27,6 +27,26 @@ export interface EscapedTextNode extends NodeBase {
   kind: "escaped-text";
   text: string;
 }
+export interface CodeNode extends NodeBase {
+  kind:'code-block'|'code-span';
+  /** Verbatim source content; no HTML whitespace normalization or execution. */
+  content:string;
+  contentSpan:SourceSpan;
+  openingSpan:SourceSpan;
+  closingSpan:SourceSpan;
+  closed:boolean;
+  info?:string;
+  infoSpan?:SourceSpan;
+  quoteLinePrefixes?:{span:SourceSpan;level:number}[];
+}
+export interface MarkdownMarkerNode extends NodeBase {
+  kind:'markdown-marker';
+  role:'heading'|'heading-end'|'list-item'|'separator'|'blockquote'|'emphasis-start'|'emphasis-end'|'strong-start'|'strong-end';
+  indent:number;
+  level?:number;
+  ordinal?:string;
+  bullet?:string;
+}
 export interface LineBreakNode extends NodeBase {
   kind: "line-break";
   count: 1;
@@ -60,6 +80,8 @@ export interface UnparsedNode extends NodeBase {
 export type Node =
   | TextNode
   | EscapedTextNode
+  | CodeNode
+  | MarkdownMarkerNode
   | LineBreakNode
   | ParagraphBreakNode
   | MathNode
@@ -89,6 +111,8 @@ export interface AtomBase {
   continuation?: Continuation;
 }
 export interface BrailleCellAtom extends AtomBase {
+  /** Generated framing/direction cells whose source span may enclose content. */
+  sourceRole?: 'structure';
   kind: "cell";
   /** Nonempty six-dot Unicode braille (U+2800..U+283F), validated by the codec. */
   cells: string;
@@ -99,6 +123,10 @@ export interface BrailleCellAtom extends AtomBase {
   /** Linear representation separator rendered as a row control by layout. */
   rowSeparator?: boolean;
   rowStart?: boolean;
+  /** Start a matrix row without separating its preceding formula prefix. */
+  rowStartInline?: boolean;
+  /** §6.17.2.6: leave a blank line before the next matrix in a composition. */
+  rowGapBefore?: boolean;
   rowEnd?: boolean;
   continuationIndent?: number;
 }

@@ -26,6 +26,7 @@ execFileSync(
 execFileSync(process.execPath, ["scripts/verify-browser-types.mjs"], { stdio: "inherit" });
 await writeFile(
   "dist/browser/THIRD-PARTY-NOTICES.txt",
+  (await readFile("THIRD-PARTY-NOTICES.md", "utf8")) + "\n\n" +
   "pinyin-pro 3.29.4\n\n" +
     (await readFile("node_modules/pinyin-pro/LICENSE", "utf8")),
 );
@@ -55,10 +56,10 @@ await writeFile(
 let sha = null;
 let sourceTreeDirty = null;
 try {
-  sha = execFileSync("git", ["rev-parse", "HEAD"], {
+  sha = execFileSync("git", ["log", "-1", "--format=%H", "--", "."], {
     encoding: "utf8", stdio: ["ignore", "pipe", "ignore"],
   }).trim();
-  sourceTreeDirty = !!execFileSync("git", ["status", "--porcelain"], {
+  sourceTreeDirty = !!execFileSync("git", ["status", "--porcelain", "--", "."], {
     encoding: "utf8", stdio: ["ignore", "pipe", "ignore"],
   }).trim();
 } catch { /* Null provenance explicitly indicates unavailable Git metadata. */ }

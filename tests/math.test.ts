@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { parseMath } from "../packages/core/src/parser/math";
-import { encodeMath } from "../packages/core/src/rules/math";
+import { encodeMath, type MathEncodingOptions } from "../packages/core/src/rules/math";
 import { encodePhysics } from "../packages/core/src/rules/physics";
 import legacy from "./standards/legacy-math.json";
 const dots = (s: string) =>
@@ -8,7 +8,7 @@ const dots = (s: string) =>
     const n = c.charCodeAt(0) - 0x2800;
     return [1, 2, 3, 4, 5, 6].filter((d) => n & (1 << (d - 1))).join("") || "0";
   });
-const convert = (s: string) => encodeMath(parseMath(s));
+const convert = (s: string,options:MathEncodingOptions={}) => encodeMath(parseMath(s),options);
 const output = (s: string) =>
   dots(
     convert(s)
@@ -99,6 +99,7 @@ describe("independent standard facts", () => {
   ])("Unicode %s matches TeX %s", (glyph, command) =>
     expect(output(`a${glyph}b`)).toEqual(output(`a${command} b`)),
   );
+
   it.each([
     ["376", ["3456", "14", "1245", "124"]],
     ["\\frac{13}{28}", ["3456", "1", "14", "23", "236"]],
@@ -158,9 +159,10 @@ describe("independent standard facts", () => {
   ] as [string, string[]][])("%s", (input, expected) =>
     expect(output(input)).toEqual(expected),
   );
-  it("gives nonblank legal breaks dot6 continuation and protects number", () => {
+  it("gives nonblank legal breaks dot6 continuation and protects the numeric prefix", () => {
     const r = convert("123a+b");
-    expect(r.atoms.find((a) => a.cells.includes("⠼"))?.cells).toBe("⠼⠁⠃⠉");
+    expect(r.atoms.slice(0,3).map(a=>a.cells).join('')).toBe("⠼⠁⠃⠉");
+    expect(r.atoms[0].cells).toBe("⠼⠁");
     expect(
       r.atoms.some((a) => a.breakAfter && a.continuation?.lineEnd === "⠠"),
     ).toBe(true);
@@ -272,12 +274,14 @@ describe("semantic boundaries and nonexamples", () => {
       ],
     ],
   ] as [string, string[]][])("%s", (s, e) => expect(output(s)).toEqual(e));
-  it("does not invent mapping for Greek glyph variants", () =>
-    expect(convert("\\varepsilon").complete).toBe(false));
+  it("retains named Greek forms with distinct readable descriptions", () => {
+    expect(convert("\\varepsilon").complete).toBe(true);
+    const r=convert("\\epsilon+\\varepsilon");expect(r.complete,JSON.stringify(r.diagnostics)).toBe(true);
+  });
   it("does not silently drop explicit typography", () =>
     expect(output("\\mathbf{x}")).toEqual(["56", "12456", "1346"]));
-  it("requires review for compound fraction hierarchy", () =>
-    expect(convert("\\frac{a}{\\frac{b}{c}}").complete).toBe(false));
+  it("encodes compound fraction hierarchy", () =>
+    expect(convert("\\frac{a}{\\frac{b}{c}}").complete).toBe(true));
   it("rejects font-name prototype properties as commands", () =>
     expect(
       convert("\\constructor").diagnostics.some(
@@ -373,8 +377,8 @@ describe("scoped TeX and explicit unit separators", () => {
         n.children.some((c) => c.kind === "script" && c.base.kind === "letter"),
     ).toBe(true);
   });
-  it("retains unknown matrix-like layout needing review", () =>
-    expect(convert("\\begin{array}{cc}a&b\\end{array}").complete).toBe(false));
+  it("retains array specifications outside the checked column adapter for review", () =>
+    expect(convert("\\begin{array}{X}a\\end{array}").complete).toBe(false));
   it("keeps explicit ordinary-variable d semantics without inventing differentiation", () =>
     expect(output("dx")).toEqual(["56", "145", "1346"]));
   it("forces function numerator fractions into a frame", () =>
@@ -617,28 +621,28 @@ describe("independent explicit font and overline facts", () => {
     ]));
   it("retains an unsupported font style diagnosis", () =>
     expect(
-      convert("\\mathsf{x}").diagnostics.some(
+      convert("\\mathsf{x}",{fontPolicy:'review-unmapped'}).diagnostics.some(
         (d) => d.code === "math-font-unverified",
       ),
     ).toBe(true));
-  it("does not expand single-letter overline evidence to composite scope", () =>
+  it("delimits composite overline scope with the section 5.4.2.3 grouping rule", () =>
     expect(
       convert("\\overline{xy}").diagnostics.some(
         (d) => d.code === "math-position-mark-unverified",
       ),
-    ).toBe(true));
+    ).toBe(false));
 });
 
 describe("font support boundaries", () => {
   it("does not claim that checked letter fonts cover styled Chinese", () => {
-    const r = convert("\\mathbf{中国}");
+    const r = convert("\\mathbf{中国}",{fontPolicy:'review-unmapped'});
     expect(r.complete).toBe(false);
     expect(r.unhandled.map((n) => n.raw).join("")).toBe("中国");
     expect(r.atoms.length).toBeGreaterThan(0);
   });
   it("does not silently approve discarded literal textit spaces", () =>
     expect(
-      convert("\\textit{a b}").diagnostics.some(
+      convert("\\textit{a b}",{fontPolicy:'review-unmapped'}).diagnostics.some(
         (d) => d.code === "math-font-text-unverified",
       ),
     ).toBe(true));

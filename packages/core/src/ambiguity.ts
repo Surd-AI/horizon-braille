@@ -1,13 +1,14 @@
 import {
   encodeDocument,
+  standaloneDomainScope,
   type EncodedDocument,
   type ConvertOptions,
 } from "./convert";
 import type { Diagnostic, SourceSpan } from "./model";
 import { encodeText } from "./rules/text";
-import { parseMath, simpleMappingColon } from "./parser/math";
+import { parseMath, mappingColonSpans } from "./parser/math";
 import { encodeMath } from "./rules/math";
-import { checkedChineseLexicon } from "./language/checked-lexicon";
+import { contextualWordReadings } from "./language/contextual-readings";
 
 export type AmbiguityKind =
   | "colon"
@@ -253,10 +254,14 @@ export function collectAmbiguities(
       .map((a) => `${a.span.start}:${a.span.end}`),
   );
   const chains = [...source.matchAll(/[+\-−]?\d+(?:\.\d+)?(?:[:：][+\-−]?\d+(?:\.\d+)?)+/g)];
-  const mappingStarts = new Set(encoded.document.nodes.flatMap(n => {
-    if (!["inline-math","display-math","bare-math"].includes(n.kind) || !("content" in n)) return [];
-    const span = simpleMappingColon(parseMath(n.content,n.contentSpan).body);
-    return span ? [span.start] : [];
+  const scope=options.mode==='math'?standaloneDomainScope(encoded.document):undefined;
+  const mappingStarts = new Set(scope?mappingColonSpans(parseMath(scope.source,scope.span).body).map(s=>s.start):encoded.document.nodes.flatMap(n => {
+    const formula=["inline-math","display-math","bare-math"].includes(n.kind) && "content" in n;
+    const explicitMath=options.mode==='math' && n.kind==='text';
+    if(!formula && !explicitMath)return [];
+    const content="content" in n?n.content:n.kind==='text'?n.text:'';
+    const sourceSpan="contentSpan" in n?n.contentSpan:n.span;
+    return mappingColonSpans(parseMath(content,sourceSpan).body).map(s=>s.start);
   }));
   let chainIndex = 0;
   for (const m of source.matchAll(/[:：]/g)) {
@@ -272,7 +277,8 @@ export function collectAmbiguities(
       kind: "colon",
       span,
       mappingSyntax: mappingStarts.has(span.start),
-      plainText: encoded.document.nodes.some(n => n.kind === "text" && n.span.start <= span.start && n.span.end >= span.end),
+      plainText: (!options.mode || options.mode==='document' || options.mode==='text') &&
+        encoded.document.nodes.some(n => n.kind === "text" && n.span.start <= span.start && n.span.end >= span.end),
       ...context(source, span),
       tokenSpan:
         chain
@@ -343,11 +349,6 @@ export function collectAmbiguities(
 // Editorial modern-Mandarin lexical exceptions, corroborating the existing
 // pinyin-pro whole-word proposals. This is not a general confidence promotion:
 // 知's zhi4 (智) literary use and 行's other readings do not apply in these words.
-const fixedWordReadings: Readonly<Record<string, readonly string[]>> = {
-  银行: ["yin2", "hang2"],
-  通知: ["tong1", "zhi1"],
-  会议: ["hui4", "yi4"],
-};
 function grammar(a: Ambiguity, source: string): string | undefined {
   if (a.kind === "polyphone") {
     if (!validContextTarget(a) || !a.contextWord) return;
@@ -357,7 +358,7 @@ function grammar(a: Ambiguity, source: string): string | undefined {
       source.slice(a.span.start, a.span.end + 2) === "发通知" &&
       /(?:^|银行|[\s，。；：！？])$/.test(source.slice(a.textSpan.start, a.span.start)) &&
       a.candidates.some(c => c.id === "fa1")) return "fa1";
-    const readings = fixedWordReadings[a.contextWord.text] ?? checkedChineseLexicon[a.contextWord.text]?.readings;
+    const readings = contextualWordReadings(a.contextWord.text);
     const at = [...a.context.slice(a.contextWord.start, a.contextTarget!.start)].length;
     const choice = readings?.[at];
     return choice && a.candidates.some(c => c.id === choice) ? choice : undefined;
@@ -607,7 +608,7 @@ export function convertWithResolutions(
   options: SemanticOptions = {},
 ): EncodedDocument {
   const initial = encodeDocument(source, options),
-    ambiguities = collectAmbiguities(initial),
+    ambiguities = collectAmbiguities(initial, options),
     stale = set.documentSource !== source;
   const decisions = new Map<string, Resolution>();
   const { byId: suppliedById, duplicates } = uniqueDecisions(set.resolutions);

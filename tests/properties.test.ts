@@ -164,7 +164,9 @@ it("hostile size/options fail within finite limits", () => {
 it("many unknown units retain one placeholder each within the source bound", () => {
   const r = convert("😀".repeat(10000), { columns: 40, paragraphIndent: 0 });
   expect(r.unhandled).toHaveLength(10000);
-  expect(r.atoms).toHaveLength(10000);
+  expect(r.atoms.filter(a=>a.ruleId==='unhandled-placeholder')).toHaveLength(10000);
+  expect(new Set(r.atoms.filter(a=>a.ruleId==='editorial-source-character-code').map(a=>`${a.span.start}:${a.span.end}`)).size).toBe(10000);
+  expect(r.atoms.length).toBeLessThanOrEqual(200000);
   expect(r.lines.every((line) => line.length <= 40)).toBe(true);
   expect(r.complete).toBe(false);
 });
